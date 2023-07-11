@@ -20,8 +20,10 @@ The Corridor spans the length of King St from Bathurst St in the west to Jarvis 
 | 19 |   King / Church   |
 | 20 |   King / Jarvis   |
 
-There are several traffic rules that were put into place for the Corridor, most of which are described [here](https://www.toronto.ca/city-government/planning-development/planning-studies-initiatives/king-street-pilot/how-to-use-the-king-street-transit-pilot/). 
+There are several traffic rules that were put into place for the Corridor, most of which are described [here](https://www.toronto.ca/city-government/planning-development/planning-studies-initiatives/king-street-pilot/how-to-use-the-king-street-transit-pilot/). A more detailed description of the restrictions can be found [here](https://www.toronto.ca/wp-content/uploads/2018/05/8ead-King-Street-Brochure_May2018_Web.pdf). 
 
 The restrictions and violations that we are investigating are in regards to private vehicles, and how they move at intersections of the Corridor. Namely, vehicles are not supposed to drive through the Bathurst or Jarvis intersections on King but can turn left or right off of King, through traffic on King not allowed at any of the intersections in the Corridor, and no left turns on King at signalized intersections in the Corridor. 
+
+Taxi vehicles are allowed through intersections between 10pm and 5am. 
 
 Notably, King and John is signalized but there is no data (this intersection is between Peter and Simcoe), which leaves a distance of about 520m between intersections with traffic data collection, the longest in the Corridor. 
