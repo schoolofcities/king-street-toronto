@@ -12,6 +12,7 @@ The Corridor spans the length of King St from Bathurst St in the west to Jarvis 
 | 11 |  King / Portland  |
 | 12 |   King / Spadina  |
 | 13 |    King / Peter   |
+| 32 |    King / John    |
 | 14 |   King / Simcoe   |
 | 15 | King / University |
 | 16 |    King / York    |
@@ -25,5 +26,3 @@ There are several traffic rules that were put into place for the Corridor, most 
 The restrictions and violations that we are investigating are in regards to private vehicles, and how they move at intersections of the Corridor. Namely, vehicles are not supposed to drive through the Bathurst or Jarvis intersections on King but can turn left or right off of King, through traffic on King not allowed at any of the intersections in the Corridor, and no left turns on King at signalized intersections in the Corridor. 
 
 Taxi vehicles are allowed through intersections between 10pm and 5am. 
-
-Notably, King and John is signalized but there is no data (this intersection is between Peter and Simcoe), which leaves a distance of about 520m between intersections with traffic data collection, the longest in the Corridor. 
