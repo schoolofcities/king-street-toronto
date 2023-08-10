@@ -25,7 +25,7 @@ Aug 24, 2018 - 10, 12, 15, 17, 18, 20
 Data is hourly but not every hour is recorded, some days have peak hours only.
 
 ## turn_restrictions2019-2023
-This dataset contains traffic volume data for the years after the King St Pilot was made permanent (Apr 2019).
+This dataset contains traffic volume data for the years after the King St Pilot was made permanent (Apr 2019), starting on Jan 1, 2019. It should be noted that the data collection process was changed in 2019 to have edge processing and continuous data collection, and that data may have been removed if there was an outage. 
 
 There is no data collected for King / Simcoe (UID: 14), as its data collection ended before the pilot began.
 
@@ -41,3 +41,35 @@ The only intersection with NULL values at any point is King / York (UID: 16), wh
 
 ## some early thoughts
 The important intersections appear to be King / Bathurst, King / Spadina, King / University, King / Bay, King / Yonge, and King / Jarvis. This makes sense as Bathurst and Jarvis define the extent of the Corridor; Spadina, University, Bay, and Yonge are all major intersections on King. 
+
+## some later thoughts
+### overall observations
+There is a seasonal trend in traffic volumes, where traffic volumes go up over the summer months (usually starting in May and June) and go down in the winter months (starting in Dec and Jan). There is also a trend in traffic volumes for COVID lockdowns, most notably at the beginning of COVID in March 2020. 
+
+#### restricted thru vs left
+Restricted thru traffic have higher volumes than restricted left traffic. This is probably because the left lane is painted over in yellow diagonal lines to indicate no use of the left turning lane. It is probably also because thru traffic movement is still permitted at some signalized intersections, such as John, Simcoe, Bay, and York. 
+
+#### E vs W
+At intersections where thru or left turn traffic is restricted, there appears to be more traffic volume coming from the east than west. See the table below, which shows the intersections from west to east, and which direction of approach has more traffic volume on average by movement (* indicates restricted movement):
+
+| Intersection | Thru | Left | Right |
+|--------------|------|------|-------|
+| Bathurst     | E*   | W    | W     |
+| Portland     | E*   | E*   | E     |
+| Spadina      | E*   | E*   | W     |
+| Peter        | E*   | E*   | E     |
+| John         | E    | E*   | W     |
+| Simcoe       | W    | E*   | W     |
+| University   | W*   | E*   | W     |
+| York         | W    | W*   | E     |
+| Bay          | W    | W*   | W     |
+| Yonge        | W*   | W*   | W     |
+| Church       | W*   | W*   | W     |
+| Jarvis       | W*   | E    | E     |
+
+### recommendations
+Future changes, updates, or enforcement of the King St Transit Priority Corridor could focus on the intersections, directions of approach, and seasons that see greater traffic volume for restricted movements, in order to have a cost-effective impact on compliance in the Corridor. Signage could be magnified, emphasized, at intersections where thru traffic is not permitted, and enforcement could be increased at intersections for directions of approach where violation volumes are higher. 
+
+### future research
+- temporal and geospatial spread of past enforcement by violations and warnings, as well as monetary values
+- comparison to volumes of parallel streets such as Richmond, Adelaide, Wellington, and Queen
