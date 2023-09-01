@@ -2,16 +2,17 @@
 
     import '../assets/global.css';
 
-    var text = "some text"
+    var text = "some text - some more text - - - "
 
 </script>
+
 
 
 <main>
 
     <div id="content">
 
-        {text}
+        <p>Hi I'm some text that won't change</p>
 
     </div>
 
@@ -23,8 +24,13 @@
 
     #content {
         height: 100vh;
-        background-color: #1E3765;
-        color: #F6F6F5;
+        background-color: var(--brandPurple);
+        color: var(--brandYellow);
+    }
+
+    p {
+        font-size: 100px;
+        font-family: TradeGothicBold;
     }
 
 </style>
