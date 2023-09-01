@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<script src='https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.js'></script>
+	<link href='https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.css' rel='stylesheet' />
+	<link rel="icon" href="%sveltekit.assets%/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<style>
+        body { margin: 0; padding: 0; }
+        html, body, #map { height: 100%; }
+    </style>
+	<title>King Street Toronto | School of Cities</title>
+	%sveltekit.head%
+
+	<!-- <meta name="description" content="An interactive map visualizing the locations and noting the details of public art installations in the City of Vancouver">
+	<meta name="author" content="Jeff Allen">
+
+	<meta property="og:title" content="Vancouver Public Art Map | School of Cities" />
+	<meta name="og:description" content="An interactive map visualizing the locations and noting the details of public art installations in the City of Vancouver" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://schoolofcities.github.io/vancouver-public-art/map" />
+	<meta property="og:image" content="https://schoolofcities.github.io/vancouver-public-art/web-card.png" />
+	<meta property="og:locale" content="en_CA">
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="https://schoolofcities.github.io/vancouver-public-art/map" />
+	<meta name="twitter:creator" content="@UofTCities" />
+	<meta name="twitter:title" content="Vancouver Public Art Map | School of Cities" />
+	<meta name="twitter:description" content="An interactive map visualizing the locations and noting the details of public art installations in the City of Vancouver" />
+	<meta name="twitter:image" content="https://schoolofcities.github.io/vancouver-public-art/web-card.png" /> -->
+
+	
+</head>
+
+<body>
+	<div style="display: contents">%sveltekit.body%</div>
+	<div id='map'></div>
+
+</body>
+
+</html>
