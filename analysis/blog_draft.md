@@ -22,15 +22,8 @@ In the summer of 2019, CBC News reported observations of the first few years of 
 
 In 2022 and 2023, the public perception of the enforcement of the King Street traffic restrictions is still that there is not enough enforcement of the rules of the Corridor, and that it appears that more drivers are ignoring signage and not facing any repercussions. Pedestrians have observed drivers breaking the rules in the Corridor, and Toronto Police say there is a general lack of interest in following traffic rules across the city. Toronto Police have competing priorities and cannot constantly patrol the Corridor, but tickets on King Street are still being issued. From January to March 17, 2023, 1852 tickets were issued in the Corridor for disobeying traffic signs, including provincial offence notices, offence summons for drivers with multiple driving convictions, and written warnings. The Corridor's city councillor and public transit advocates are demanding explanations for the car traffic in the Corridor, and emphasize a need to revisit the redesign of King Street, calling on the city and police to do their part. They feel that the Transit Priority Corridor is no longer a priority for the city, and that King Street is just like any other street again. 
 
-
-## introduce traffic volume data
-we are investigating how many drivers are breaking the rules of the corridor
-
-investigating traffic volume data for restricted movements in the King Street Transit Priority Corridor
-
-The restrictions and violations that we are investigating are in regards to private vehicles, and how they move at intersections of the Corridor. Namely, vehicles are not supposed to drive through the Bathurst or Jarvis intersections on King but can turn left or right off of King, through traffic on King not allowed at any of the intersections in the Corridor, and no left turns on King at signalized intersections in the Corridor. In reality, some intersections do allow for through traffic because they are oneway streets (Simcoe, York), but for others it is less clear (John, Bay). 
-
-with aggregated traffic volume data was collected by the City of Toronto at several intersections from Bathurst to Jarvis on King St (see table below). 
+## Traffic Volume Data
+To understand how many drivers have been ignoring signage and breaking the rules in the Corridor, and to see if they were increasing, we investigated traffic volumes at each signalized intersection in the Corridor that has restricted movements. The City of Toronto collects and aggregates traffic volumes for all movements at several intersections in the downtown core, including these intersections in the Corridor on King Street, from west to east (see table below). 
 
 | UID |    Intersection   |
 |:--:|:-----------------:|
@@ -47,24 +40,72 @@ with aggregated traffic volume data was collected by the City of Toronto at seve
 | 19 |   King / Church   |
 | 20 |   King / Jarvis   |
 
+The restrictions and violations that we are investigating apply to private vehicles, and how they move at intersections of the Corridor. The rules of the Corridor are visualized in the image below (from the City of Toronto, modified). 
+
+- insert graphic of Corridor with restrictions
+
+Vehicles are not supposed to drive through the Bathurst or Jarvis intersections on King but can turn left or right off of King. Thru traffic on King not allowed at any signalized intersection in the Corridor and no left turns are allowed on King at signalized intersections in the Corridor. The exceptions to these rules occur at intersections of oneway streets (Simcoe, York), and some select others (John, Bay). 
+
+Taxi vehicles are permitted to make thru movements at intersections between 10pm and 5am, and thus our data analysis will not include traffic volume data from that time period, as there is no differentiation in the data between types of private vehicles to identify a taxi. The traffic volume data is aggregated hourly, and the earliest data collection began in Oct 2017 at a few intersections before the start of the King Street Pilot. The most recent data that we use, available at only a few intersections, are up to date to May 2023. 
 
 
-Taxi vehicles are allowed through intersections between 10pm and 5am, and thus our data analysis will not include traffic volume data from those time periods, as there is no differentiation in the data between a private vehicle and a taxi. 
+### Pre-Pilot Traffic Volumes
+The City investigated the traffic volumes of the King Street Corridor prior to the start of the King Street Pilot Project in order to establish a baseline. This data was reported on in their monthly dashboards, found [here](https://www.toronto.ca/city-government/planning-development/planning-studies-initiatives/king-street-pilot/data-reports-background-materials/). 
 
+All of the traffic volume sensors in the Corridor were installed sometime in October 2017, although not all of them have data for the same dates (John does not have any pre-pilot data). In the interactive chart below, you can view which intersections were collecting data before the King Street Pilot began. Even in this short time period to establish baseline traffic volumes, it is clear that thru traffic was very high before the Pilot, with an average of 3721 vehicles for thru traffic coming from both east and west directions across 11 intersections (John does not have pre-pilot traffic volume data) per day. Left turning traffic coming from both east and west directions across 11 intersections average at 657 vehicles per day during this time period. 
 
-### pre-pilot volumes
+- insert interactive chart with filterable intersections and movements for pre-pilot period: includes avg thrus, lefts, rights per intersection; that's 6 points per intersection
+- show the intersection chart instead of the date chart
+- data table format: rows are intersection names, columns are movement types, values are average daily sum
 
-### pilot volumes
+### Traffic Volume During the Pilot
+The King Street Pilot began on November 12, 2017, and the impact of overall traffic volume on King Street was immediate. The average thru traffic volume across all 12 intersections (including Simcoe, York, John, and Bay, which permit thru traffic) between the start of the pilot and the end of 2018 is 417 per day, almost a 90% decrease. The average traffic volume for left turning vehicles across 11 intersections (including directionally permitted lefts at Bathurst and Jarvis; Simcoe does not have data) is 174 vehicles per day, a 73% decrease. Although it is clear that many drivers are following the movement restrictions of the Pilot, these numbers also show that there were still hundreds of vehicles a day violating the rules in the Corridor. 
+
+- insert interactive intersection chart with filterable movements for the pilot period
+- data table format: rows are intersection names, columns are movement types, values are average daily sum
+
+The City also reported on these numbers in their monthly dashboard reports, found [here](https://www.toronto.ca/city-government/planning-development/planning-studies-initiatives/king-street-pilot/data-reports-background-materials/). 
+
+It should be noted that the sensor at King & Simcoe did not collect any traffic volume data during the Pilot or in the years after, and will be excluded from the visualizations. 
 
 ## corridor being made permanent in 2019
 - completeness of 2019 data, present all intersections
 - avg violations per day by intersection
 
+According to city staff, the method for traffic volume data collection changed for 2019 in that edge processing units were installed and no longer relied on human assistance. Data collection became continuous, and so the traffic volume data for 2019 is the most complete year of data for active sensors in the Corridor before the COVID-19 pandemic. The King Street Pilot Project was also made into the permanent King Street Transit Priority Corridor on April 16, 2019. 
+
+The traffic volume data for 2019 shows that of the 11 intersections collecting data in the Corridor, Portland and Bathurst have the highest average restricted thru traffic, and Bathurst had the highest average volume for restricted left turns (east approach only). 
+
+- chart of traffic volumes by date and movement, averaged daily sums across all intersections
+
+- insert stack of interactive charts, one for each intersection, showing average violations per day for each movement type
+- or, single interactive chart with dropdown to select which intersection to view; maintain x and y axis values to support visual comparison
+- or, just the major intersections
+
+
 ### post-permanency volumes 2020-2023
 - as some intersections' sensors were decommissioned, major intersections only
 - covid patterns
 - slow increase in traffic volume
-- thru vs left, E approach vs W approach
+- understanding violations: thru vs left, E approach vs W approach
+
+On June 15, 2020, half of the traffic volume sensors in the King Street Transit Priority Corridor were decomissioned and relocated to support other transportation projects elsewhere in the City. Those sensors are King / Portland (UID: 11), King / Peter (UID: 13), King / John (UID: 32), King / Simcoe (UID: 14), King / York (UID: 16), King / Church (UID: 19). The remaining six (6) traffic volume sensors are King / Bathurst (UID: 10), King / Spadina (UID: 12), King / University (UID: 15), King / Bay (UID: 17), King / Yonge (UID: 18), and King / Jarvis (UID: 20). The intersections with the remaining sensors can be considered as major intersections on King, and there is relatively continuous data from 2020 through to 2023. King / Jarvis has data up to February 2023, while the other intersections have data up to May 2023 (around when we requested the data from the city). 
+
+The impact of the COVID-19 pandemic is clearly seen in the traffic volume data, as provincial states of emergency and lockdown restrictions can be observed in the data. There were lockdowns, increased restrictions, or declarations of states of emergency in March 2020, September 2020, December 2020, and January 2021. Restrictions were fully lifted in April and May of 2022. 
+
+- maybe a chart with notations to show changes in volume caused by restrictions? kind of deviates from the main point of the blog though
+
+After the dip in traffic volume in 2020, we can see a slow increase over 2021 and 2022 to its current levels in 2023.
+
+- interactive chart where you select the intersection by dropdown menu, and displays 4 stacked scatter charts, representing 2020, 2021, 2022, and 2023; alternatively, if there is enough difference in the data, one chart that shows all years but older data appears more ghostly/greyed out
+
+
+
+
+- BEFORE/AFTER graphic?? MAYBE AT THE END. avg thrus and lefts where restricted in periods with data, per intersection (big graphic of 12 little charts)
 
 ## future investigations
 - any data from Toronto Police
+- refer back to news article with single number between Jan-Mar and compare with actual violations in Corridor
+
+
