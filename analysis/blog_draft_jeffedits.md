@@ -1,4 +1,4 @@
-FIGURE 0 --- some sort of top-level photo/figure of King Street
+FIGURE 0 --- some sort of top-level photo/figure of King Street (corridor_simple.svg)
 
 
 
@@ -10,7 +10,7 @@ October 2023
 
 It has been almost 6 years since the City of Toronto altered traffic restrictions on King Street to give priority to public transit over private vehicles. Since the initiation of the project, cars have not been allowed to travel straight or make left turns at many intersections, reducing through traffic volumes.
 
-While the project has been largely successful in reducing travel times by transit and improving reliability (LINK TO CITY), many have raised concerns over traffic violations at intersections, specifically drivers illegally driving straight through intersections or making left-turns, and the lack of enforcement of these rules. (COUPLE LINKS TO MEDIA HERE)
+While the project has been largely successful in reducing travel times by transit and improving reliability ([City of Toronto](https://www.toronto.ca/city-government/planning-development/planning-studies-initiatives/king-street-pilot/data-reports-background-materials/)), many have raised concerns over traffic violations at intersections, specifically drivers illegally driving straight through intersections or making left-turns, and the lack of enforcement of these rules ([Global News](https://globalnews.ca/news/9577392/motorists-breaking-rules-toronto-king-street-transit-corridor/)). 
 
 We requested data on intersection-level vehicle movement data from the City of Toronto and traffic tickets from Toronto Police from 2016 to mid-2023. Based on this data, we estimate that on average there are X illegal turns and through movements at intersections per month, compared to only Y traffic tickets being handed out. At $110 per ticket, this is a massive missed opportunity for revenue for the City that could be achieved with increased enforcement, particularly via automatic enforcement cameras.
 
@@ -26,7 +26,7 @@ There are several traffic rules that were put into place for private vehicles tr
 
 The King Street Pilot Project was approved by City Council on July 4, 2017, and was launched November 12, 2017, expecting to operate for one year, and was granted an extension to July 31, 2019. On April 16, 2019, City Council made the King Street Pilot Project permanent as the King Street Transit Priority Corridor. 
 
-FIGURE 2 --- insert map of corridor - showing restrictions
+FIGURE 2 --- insert map of corridor - showing restrictions (corridor_new.svg)
 
 Vehicles are not supposed to drive through the Bathurst or Jarvis intersections on King but can turn left or right off of King. Thru traffic on King is not allowed at any signalized intersection in the Corridor and no left turns are allowed on King at signalized intersections in the Corridor. The exceptions to these rules occur at intersections of oneway streets (Simcoe, York), and some select others (John, Bay).
 
@@ -35,7 +35,7 @@ Vehicles are not supposed to drive through the Bathurst or Jarvis intersections 
 
 The initial successes and impacts of the King Street Pilot/Transit Priority Corridor are well documented in the [dashboard-style reports](https://www.toronto.ca/city-government/planning-development/planning-studies-initiatives/king-street-pilot/data-reports-background-materials/) published by the City of Toronto, in cooperation with TTC. 
 
-The project decreased transit travel times, and improved reliability, and initially led to an increase in ridership. The TTC added increased service to the 504 route as a response to the project's success (SOURCE?). There was also increased cycling volumes and pedestrian volumes on King Street, as the street became safer due to there being fewer cars. Car volumes on King decreased by XX%, and while there was some increase to traffic volume on nearby parallel street, there was minimal impact to travel times on those streets (Queen/Richmond/Adelaide/Wellington). Overall, the King Street Transit Priority Corridor was considered a success, and was used as a model for transit prioritization elsewhere (e.g. 14th Street in New York City). 
+The project decreased transit travel times, and improved reliability, and initially led to an increase in ridership. The TTC added increased service to the 504 route as a response to the project's success ([City of Toronto](https://www.toronto.ca/legdocs/mmis/2019/cc/bgrd/backgroundfile-132032.pdf); [The Star](https://www.thestar.com/news/gta/king-st-pilot-boosting-streetcar-ridership-ttc/article_8718cdce-0859-55e8-8397-af06878dbbde.html)). There was also increased cycling volumes and pedestrian volumes on King Street, as the street became safer due to there being fewer cars. Car volumes on King decreased by XX%, and while there was some increase to traffic volume on nearby parallel street, there was minimal impact to travel times on those streets (Queen/Richmond/Adelaide/Wellington). Overall, the King Street Transit Priority Corridor was considered a success, and was used as a model for transit prioritization elsewhere (e.g. 14th Street in New York City). 
 
 
 
@@ -45,9 +45,9 @@ The project decreased transit travel times, and improved reliability, and initia
 
 <!-- if we get the data, I think we should put a bar chart in here of tickets by month/year - can likely just replicate the year-month chart from our bikeshare story -->
 
-In the summer of 2019, CBC News reported (LINK TO SOURCE) observations of the first few years of the King Street Pilot. Many drivers were disobeying the traffic restriction signs, even though fines are $110 a ticket and two demerit points. From November 2017 to July 2019, the 21-month period of the King Street Pilot until it became permanent, Toronto Police had issued 16,000 tickets for the Corridor, with the biggest culprit being out-of-town drivers (LINK TO SOURCE). Police say that while the perception is that there isn't enough enforcement, in actuality the Corridor is covered by three divisions (SO?). 
+In the summer of 2019, [CBC News reported](https://www.cbc.ca/news/canada/toronto/traffic-tickets-transit-king-toronto-violation-1.5263557) observations of the first few years of the King Street Pilot. Many drivers were disobeying the traffic restriction signs, even though fines are $110 a ticket and two demerit points. From November 2017 to July 2019, the 21-month period of the King Street Pilot until it became permanent, Toronto Police had issued 16,000 tickets for the Corridor, with the biggest culprit being out-of-town drivers ([CBC News](https://www.cbc.ca/news/canada/toronto/traffic-tickets-transit-king-toronto-violation-1.5263557)). Police say that the perception is that there isn't enough enforcement, but actually the Corridor is covered by three divisions. 
 
-The city and police are interested in automated enforcement cameras to maintain enforcement in the area, but this is not possible as it requires the province to provide legislative authority (SOURCE?). In 2019, MTO was still developing a regulatory framework for the implementation of automated speed enforcement (SOURCE?). Notably, New York City's emulation of the King Street Transit Priority Corridor on their 14th Street implements automated enforcement cameras to great effect (SOURCE?). 
+The city and police are interested in automated enforcement cameras to maintain enforcement in the area, but this is not possible as it requires the province to provide legislative authority ([CBC News](https://www.cbc.ca/news/canada/toronto/traffic-tickets-transit-king-toronto-violation-1.5263557)). In 2019, MTO was still developing a regulatory framework for the implementation of automated speed enforcement ([CBC News](https://www.cbc.ca/news/canada/toronto/traffic-tickets-transit-king-toronto-violation-1.5263557)). Notably, New York City's emulation of the King Street Transit Priority Corridor on their 14th Street implements automated enforcement cameras to great effect ([The Star](https://www.thestar.com/news/gta/video-how-many-drivers-are-ignoring-the-rules-on-the-king-street-transit-corridor/article_3c87b687-400f-586c-aeae-997e285fcd81.html)). 
 
 In 2022 and 2023, the public perception of the enforcement of the King Street traffic restrictions is still that there is not enough enforcement of the rules of the Corridor, and that it appears that more drivers are ignoring signage and not facing any repercussions. Pedestrians have observed drivers breaking the rules in the Corridor.
 
@@ -55,7 +55,7 @@ Toronto Police say there is a general lack of interest in following traffic rule
 
 From January to March 17, 2023, 1852 tickets were issued in the Corridor for disobeying traffic signs, including provincial offence notices, offence summons for drivers with multiple driving convictions, and written warnings. (REPLACE WITH OUR OWN DATA IF POSSIBLE)
 
-The Corridor's city councillor (WHO? MOISE OR MALIK?) and public transit advocates are demanding explanations for the car traffic in the Corridor, and emphasize a need to revisit the redesign of King Street, calling on the city and police to do their part. They feel that the Transit Priority Corridor is no longer a priority for the city, and that King Street is just like any other street again (SOURCES?).
+The Corridor's city councillor Malik and public transit advocates are demanding explanations for the car traffic in the Corridor, and emphasize a need to revisit the redesign of King Street, calling on the city and police to do their part. They feel that the Transit Priority Corridor is no longer a priority for the city, and that King Street is just like any other street again ([CBC News](https://www.cbc.ca/news/canada/toronto/king-street-redesign-transit-priority-corridor-councillor-advocate-1.6689566)).
 
 
 
@@ -66,9 +66,7 @@ Only a percent of those who make an illegal move at an intersection get ticketed
 
 To understand how many drivers have been ignoring signage and breaking the law in the Corridor, and to see if they were increasing, we analyzed traffic volume data provided by the City of Toronto for each signalized intersection in the Corridor that has restricted movements. 
 
-The traffic volume data was pre-aggregated by hour, and the earliest data collection began in October 2017 at a few intersections before the start of the King Street Pilot. The most recent data that we use, available at only a few intersections, are as recent as May 2023. The data provided are not complete throughout this time period. 
-
-(Describe briefly why there are gaps in the data)
+The traffic volume data was pre-aggregated by hour, and the earliest data collection began in October 2017 at a few intersections before the start of the King Street Pilot, which was used by the city to establish baselines for their analyses. The most recent data that we use, available at only a few intersections, are as recent as May 2023. The data provided are not complete throughout the time period of the King Street Pilot to today, as the data collection process changed in 2019 and some sensors were decomissioned in 2020. Before 2019, data collection was sporadic and conducted every couple of weeks and required human assistance. In 2019, edge processing units were installed and no longer relied on human assistance, and so data collection for most intersections became continuous to today. 
 
 As well, taxi vehicles are permitted to make thru movements at intersections overnight, between 10pm and 5am, and thus our data analysis will not include traffic volume data from that time period, as there is no differentiation in the data between types of private vehicles to identify a taxi. Therefore any counts that we present are likely a slight under-estimation due to not accounting for violations that occur overnight.
 
@@ -120,7 +118,7 @@ Summary of findings + recommendations (e.g. cameras?)
 
 Links for downloading data, link to GitHub page with code/notebooks for further exploring the data (maybe we can host the notebooks on Binder as well or something similar to allow for easy exploration)
 
-According to city staff (SOURCE?), the method for traffic volume data collection changed for 2019 in that edge processing units were installed and no longer relied on human assistance. Data collection became continuous, and so the traffic volume data for 2019 is the most complete year of data for active sensors in the Corridor before the COVID-19 pandemic. The King Street Pilot Project was also made into the permanent King Street Transit Priority Corridor by city council on April 16, 2019. 
+Through email communications with city staff, we learned that the method for traffic volume data collection changed for 2019 in that edge processing units were installed and no longer relied on human assistance. Data collection became continuous, and so the traffic volume data for 2019 is the most complete year of data for active sensors in the Corridor before the COVID-19 pandemic. The King Street Pilot Project was also made into the permanent King Street Transit Priority Corridor by city council on April 16, 2019. 
 
 
 
