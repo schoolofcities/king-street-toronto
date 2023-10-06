@@ -80,7 +80,7 @@ We first visualize the total violations per day across all intersections (sans S
 
 FIGURE 3
 --- single chart of total violations across ALL intersections by day WITH Loess best fit curve (probably need to pre-compute this curve, maybe d3 can do on-the-fly?)
---- pair this chart with stats for the TOTAL number of violations in 2019, and the AVERAGE violations per day, for where we are missing data, use the loess value for these statistics
+--- pair this chart with stats for the TOTAL number of violations in 2019 (2,453,812), and the AVERAGE violations per day (623.013629), for where we are missing data, use the loess value for these statistics
 
 Let's dive in to look at each specific intersection
 
