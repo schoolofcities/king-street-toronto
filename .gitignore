@@ -7,8 +7,6 @@ analysis/Traffic tickets and fines for King St Transit Corridor.docx
 node_modules/
 ProQuestDocuments-2023-08-16.pdf
 analysis/~$affic tickets and fines for King St Transit Corridor.docx
-<<<<<<< HEAD
 node_modules
-=======
-
->>>>>>> 92f242b86bb2bb382c8ccf01b7e84cbeb5324e72
+.svelte-kit/
+.svelte-kit
