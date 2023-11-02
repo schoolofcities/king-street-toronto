@@ -2,6 +2,7 @@
     // import: styling, d3, and data
     import "../assets/global.css"
     import * as d3 from "d3";
+    import {regressionLoess} from "d3-regression";
     import { onMount } from 'svelte';
     import violations2019 from "../data/violations2019.json";
 
@@ -61,7 +62,7 @@
 
 
     // create Loess regression line
-    const regressionGenerator = d3.regressionLoess()
+    const regressionGenerator = regressionLoess()
         .x((d) => parseDate(d.date))
         .y((d) => d.total)
         .bandwidth(0.3)
@@ -119,3 +120,6 @@
     });
 
 </script>
+
+
+<div id="total-violations-chart"></div>
