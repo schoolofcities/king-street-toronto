@@ -23,7 +23,7 @@
     --brandDarkGreen: #0D534D;
     --brandMedGreen: #00A189;
     --brandLightGreen: #8DBF2E;
-    --brandRed: #DC4633; 
+    --brandRed: #DC4633;  
     --brandYellow: #F1C500;
     --brandBlack: #000000;
     --brandWhite: #ffffff;
@@ -62,6 +62,11 @@ p {
     line-height: 27px;
 }
 
+a {
+    text-decoration: none;
+    color: var(--brandMedBlue);
+}
+
 .title {
     background-color: none;
     max-width: 700px;
@@ -73,7 +78,32 @@ p {
 .text {
     background-color: none;
     max-width: 700px;
+    min-width: 400px;
+    width: calc(100% - 18px - 18px);
     margin: 0 auto;
     padding-left: 18px;
     padding-right: 18px;
+}
+
+.wideImage {
+    background-color: none;
+    max-width: 900px;
+    min-width: 400px;
+    width: calc(100% - 18px - 18px);
+    margin: 0 auto;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+.yellow {
+    background-color: var(--brandYellow);
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.red {
+    background-color: var(--brandRed);
+    color: white;
+    padding-left: 2px;
+    padding-right: 2px;
 }
