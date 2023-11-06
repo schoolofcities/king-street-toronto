@@ -27,3 +27,21 @@
     --brandGray80: #333333;
     --brandGray90: #191919;
 }
+
+main {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+p {
+    font-family: RobotoRegular;
+    font-size: 18px;
+}
+
+.text {
+    background-color: none;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
