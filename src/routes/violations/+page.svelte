@@ -36,7 +36,7 @@
             While the project has been largely successful in reducing travel times by transit and improving reliability (<a href="https://www.toronto.ca/city-government/planning-development/planning-studies-initiatives/king-street-pilot/data-reports-background-materials/">City of Toronto</a>), many have raised concerns over traffic violations at intersections, specifically drivers illegally driving straight through intersections or making left-turns, and the lack of enforcement of these rules (<a href="https://globalnews.ca/news/9577392/motorists-breaking-rules-toronto-king-street-transit-corridor/">Global News</a>).
         </p>
         <p>
-            We requested and analyzed data on intersection-level vehicle movement data from the City of Toronto as well as traffic tickets from Toronto Police from 2016 to mid-2023. From this data, we fine there are approximately <u>5,000 illegal turns and thru movements at intersections per day</u>, but only <span class="yellow">3%</span> are being ticketed by Toronto Police, on average. 
+            We requested and analyzed data on intersection-level vehicle movement data from the City of Toronto as well as traffic tickets from Toronto Police from 2016 to mid-2023. From this data, we find there are approximately <u>5,000 illegal turns and thru movements at intersections per day</u>, but only <span class="yellow">3%</span> are being ticketed by Toronto Police, on average. 
         </p>
 
         <SingleStackedBar/>
@@ -146,79 +146,35 @@
             However, we can still take a look at trends for each of these six intersections, and compare each to 2019 average violations.
         </p>
 
+        
+
     </div>
 
-
-
-    
-    <!-- <div class="chartGrid2019">
-
-        <ViolationsChart2019
-            intersectionID="10"
-        />
-        <ViolationsChart2019
-            intersectionID="11"
-        />
-        <ViolationsChart2019
-            intersectionID="12"
-        />
-        <ViolationsChart2019
-            intersectionID="13"
-        />
-        <ViolationsChart2019
-            intersectionID="32"
-        />
-        <ViolationsChart2019
-            intersectionID="14"
-        />
-        <ViolationsChart2019
-            intersectionID="15"
-        />
-        <ViolationsChart2019
-            intersectionID="16"
-        />
-        <ViolationsChart2019
-            intersectionID="17"
-        />
-        <ViolationsChart2019
-            intersectionID="18"
-        />
-        <ViolationsChart2019
-            intersectionID="19"
-        />
-        <ViolationsChart2019
-            intersectionID="20"
-        />
-        
-    </div> -->
-
-    <!-- <h2>Intersection Violations, 2020-2023</h2>
-
-    <ViolationsChart2020s
-        intersectionID="10"
-    />
-    <ViolationsChart2020s
-        intersectionID="12"
-    />
-    <ViolationsChart2020s
-        intersectionID="15"
-    />
-    <ViolationsChart2020s
-        intersectionID="17"
-    />
-    <ViolationsChart2020s
-        intersectionID="18"
-    />
-    <ViolationsChart2020s
-        intersectionID="20"
-    /> -->
+    <div class="wideImage">
+        <ViolationsChart2020s intersectionID="10"/>
+        <ViolationsChart2020s intersectionID="12"/>
+        <ViolationsChart2020s intersectionID="15"/>
+        <!-- <ViolationsChart2020s intersectionID="17"/> -->
+        <ViolationsChart2020s intersectionID="18"/>
+        <ViolationsChart2020s intersectionID="20"/>
+    </div>
 
     <div class="text">
 
-        <h3>Enforcement, or Lack Thereof?</h3>
+        <h3>Changing Patterns in Enforcement?</h3>
 
         <p>
 
+        </p>
+
+    </div>
+
+    <div class="text">
+
+        <h3>Final Thoughts</h3>
+
+        <p>
+            
         </p>
 
     </div>

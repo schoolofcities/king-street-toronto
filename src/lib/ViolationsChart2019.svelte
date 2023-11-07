@@ -19,7 +19,7 @@
 
     // chart layout parameters
     let width;
-    const height = 150;
+    const height = 200;
     const marginTop = 40;
     const marginRight = 10;
     const marginBottom = 40;
@@ -176,7 +176,7 @@
 
     .scatter-plot {
         width: 100%;
-        max-width: 420px;
+        max-width: 820px;
         /* height: 301px; */
     }
 
