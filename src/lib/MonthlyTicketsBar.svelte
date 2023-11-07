@@ -20,7 +20,7 @@
     const height = 300;
     const marginTop = 80;
     const marginRight = 10;
-    const marginBottom = 40;
+    const marginBottom = 20;
     const marginLeft = 50;
 
     // defining x and y scales
