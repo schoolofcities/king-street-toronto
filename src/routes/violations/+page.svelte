@@ -2,13 +2,15 @@
 
     import '../../assets/global.css';
 
-    import corridorDetailedMap from '../../assets/corridor_web.svg';
+    import TopOfSofC from "$lib/TopSofC.svelte";
 
     import SingleStackedBar from '$lib/SingleStackedBar.svelte';
+    import corridorDetailedMap from '../../assets/corridor_web.svg';
     import VerticalBarChart from '$lib/VerticalBarChart.svelte';
-    import ViolationsChart2020s from "../../lib/ViolationsChart2020s.svelte";
-    import ViolationsChart2019 from "../../lib/ViolationsChart2019.svelte";
-    import TotalViolations2019Chart from "../../lib/TotalViolations2019Chart.svelte";
+    import ViolationsChart2020s from "$lib/ViolationsChart2020s.svelte";
+    import TotalViolations2019Chart from "$lib/TotalViolations2019Chart.svelte";
+    import MonthlyTicketsBar from '$lib/MonthlyTicketsBar.svelte';
+
 
 </script>
 
@@ -16,12 +18,11 @@
 
 <main>
 
+    <TopOfSofC/>
+
     <div class="title">
 
-
         <h1>King Street</h1>
-
-        
 
     </div>
 
@@ -161,11 +162,26 @@
 
     <div class="text">
 
+        <p>
+            The trends from 2020 to 2023 above fluctuate over time, and are often in relation to COVID-19 closures that reduced traffic overall in the region.
+        </p>    
+        <p>    
+            Overall though, the number of traffic violations in the latter half of 2022 and into 2023 are very close to 2019 averages. Overall, while we do not have complete data across the all intersections, based on the data that we have, we can be pretty confident that the number of violations per day (excluding 10pm to 5am) has returned to the 2019 level of around 5,000 per day.
+        </p>
+
+    </div>
+
+    <div class="text">
+
         <h3>Changing Patterns in Enforcement?</h3>
 
         <p>
 
         </p>
+
+        <MonthlyTicketsBar variable="tickets"/>
+
+        <MonthlyTicketsBar variable="warnings"/>
 
     </div>
 

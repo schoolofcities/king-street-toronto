@@ -1,0 +1,542 @@
+[
+ {
+   "year": 2016,
+   "month": 1,
+   "tickets": 65,
+   "warnings": 72
+ },
+ {
+   "year": 2016,
+   "month": 2,
+   "tickets": 37,
+   "warnings": 40
+ },
+ {
+   "year": 2016,
+   "month": 3,
+   "tickets": 46,
+   "warnings": 31
+ },
+ {
+   "year": 2016,
+   "month": 4,
+   "tickets": 14,
+   "warnings": 78
+ },
+ {
+   "year": 2016,
+   "month": 5,
+   "tickets": 86,
+   "warnings": 83
+ },
+ {
+   "year": 2016,
+   "month": 6,
+   "tickets": 21,
+   "warnings": 62
+ },
+ {
+   "year": 2016,
+   "month": 7,
+   "tickets": 28,
+   "warnings": 87
+ },
+ {
+   "year": 2016,
+   "month": 8,
+   "tickets": 31,
+   "warnings": 100
+ },
+ {
+   "year": 2016,
+   "month": 9,
+   "tickets": 29,
+   "warnings": 89
+ },
+ {
+   "year": 2016,
+   "month": 10,
+   "tickets": 44,
+   "warnings": 56
+ },
+ {
+   "year": 2016,
+   "month": 11,
+   "tickets": 72,
+   "warnings": 52
+ },
+ {
+   "year": 2016,
+   "month": 12,
+   "tickets": 82,
+   "warnings": 97
+ },
+ {
+   "year": 2017,
+   "month": 1,
+   "tickets": 43,
+   "warnings": 42
+ },
+ {
+   "year": 2017,
+   "month": 2,
+   "tickets": 73,
+   "warnings": 6
+ },
+ {
+   "year": 2017,
+   "month": 2,
+   "tickets": 47,
+   "warnings": 88
+ },
+ {
+   "year": 2017,
+   "month": 3,
+   "tickets": 26,
+   "warnings": 48
+ },
+ {
+   "year": 2017,
+   "month": 4,
+   "tickets": 60,
+   "warnings": 92
+ },
+ {
+   "year": 2017,
+   "month": 5,
+   "tickets": 14,
+   "warnings": 42
+ },
+ {
+   "year": 2017,
+   "month": 6,
+   "tickets": 88,
+   "warnings": 91
+ },
+ {
+   "year": 2017,
+   "month": 7,
+   "tickets": 12,
+   "warnings": 36
+ },
+ {
+   "year": 2017,
+   "month": 8,
+   "tickets": 89,
+   "warnings": 18
+ },
+ {
+   "year": 2017,
+   "month": 9,
+   "tickets": 99,
+   "warnings": 95
+ },
+ {
+   "year": 2017,
+   "month": 10,
+   "tickets": 64,
+   "warnings": 66
+ },
+ {
+   "year": 2017,
+   "month": 11,
+   "tickets": 53,
+   "warnings": 38
+ },
+ {
+   "year": 2017,
+   "month": 12,
+   "tickets": 10,
+   "warnings": 29
+ },
+ {
+   "year": 2018,
+   "month": 1,
+   "tickets": 33,
+   "warnings": 49
+ },
+ {
+   "year": 2018,
+   "month": 2,
+   "tickets": 84,
+   "warnings": 34
+ },
+ {
+   "year": 2018,
+   "month": 3,
+   "tickets": 86,
+   "warnings": 53
+ },
+ {
+   "year": 2018,
+   "month": 4,
+   "tickets": 4,
+   "warnings": 52
+ },
+ {
+   "year": 2018,
+   "month": 5,
+   "tickets": 73,
+   "warnings": 36
+ },
+ {
+   "year": 2018,
+   "month": 6,
+   "tickets": 52,
+   "warnings": 19
+ },
+ {
+   "year": 2018,
+   "month": 7,
+   "tickets": 33,
+   "warnings": 89
+ },
+ {
+   "year": 2018,
+   "month": 8,
+   "tickets": 29,
+   "warnings": 47
+ },
+ {
+   "year": 2018,
+   "month": 9,
+   "tickets": 67,
+   "warnings": 68
+ },
+ {
+   "year": 2018,
+   "month": 10,
+   "tickets": 59,
+   "warnings": 81
+ },
+ {
+   "year": 2018,
+   "month": 11,
+   "tickets": 59,
+   "warnings": 97
+ },
+ {
+   "year": 2018,
+   "month": 12,
+   "tickets": 31,
+   "warnings": 94
+ },
+ {
+   "year": 2019,
+   "month": 1,
+   "tickets": 50,
+   "warnings": 48
+ },
+ {
+   "year": 2019,
+   "month": 2,
+   "tickets": 62,
+   "warnings": 28
+ },
+ {
+   "year": 2019,
+   "month": 3,
+   "tickets": 80,
+   "warnings": 26
+ },
+ {
+   "year": 2019,
+   "month": 4,
+   "tickets": 97,
+   "warnings": 7
+ },
+ {
+   "year": 2019,
+   "month": 5,
+   "tickets": 28,
+   "warnings": 21
+ },
+ {
+   "year": 2019,
+   "month": 6,
+   "tickets": 62,
+   "warnings": 52
+ },
+ {
+   "year": 2019,
+   "month": 7,
+   "tickets": 79,
+   "warnings": 8
+ },
+ {
+   "year": 2019,
+   "month": 8,
+   "tickets": 74,
+   "warnings": 5
+ },
+ {
+   "year": 2019,
+   "month": 9,
+   "tickets": 9,
+   "warnings": 7
+ },
+ {
+   "year": 2019,
+   "month": 10,
+   "tickets": 13,
+   "warnings": 92
+ },
+ {
+   "year": 2019,
+   "month": 11,
+   "tickets": 94,
+   "warnings": 96
+ },
+ {
+   "year": 2019,
+   "month": 12,
+   "tickets": 99,
+   "warnings": 75
+ },
+ {
+   "year": 2020,
+   "month": 1,
+   "tickets": 20,
+   "warnings": 20
+ },
+ {
+   "year": 2020,
+   "month": 2,
+   "tickets": 42,
+   "warnings": 42
+ },
+ {
+   "year": 2020,
+   "month": 3,
+   "tickets": 79,
+   "warnings": 1
+ },
+ {
+   "year": 2020,
+   "month": 4,
+   "tickets": 90,
+   "warnings": 12
+ },
+ {
+   "year": 2020,
+   "month": 5,
+   "tickets": 8,
+   "warnings": 77
+ },
+ {
+   "year": 2020,
+   "month": 6,
+   "tickets": 52,
+   "warnings": 55
+ },
+ {
+   "year": 2020,
+   "month": 7,
+   "tickets": 75,
+   "warnings": 44
+ },
+ {
+   "year": 2020,
+   "month": 8,
+   "tickets": 7,
+   "warnings": 10
+ },
+ {
+   "year": 2020,
+   "month": 9,
+   "tickets": 22,
+   "warnings": 69
+ },
+ {
+   "year": 2020,
+   "month": 10,
+   "tickets": 90,
+   "warnings": 13
+ },
+ {
+   "year": 2020,
+   "month": 11,
+   "tickets": 78,
+   "warnings": 91
+ },
+ {
+   "year": 2020,
+   "month": 12,
+   "tickets": 33,
+   "warnings": 80
+ },
+ {
+   "year": 2021,
+   "month": 1,
+   "tickets": 53,
+   "warnings": 85
+ },
+ {
+   "year": 2021,
+   "month": 2,
+   "tickets": 39,
+   "warnings": 8
+ },
+ {
+   "year": 2021,
+   "month": 3,
+   "tickets": 23,
+   "warnings": 71
+ },
+ {
+   "year": 2021,
+   "month": 4,
+   "tickets": 69,
+   "warnings": 78
+ },
+ {
+   "year": 2021,
+   "month": 5,
+   "tickets": 13,
+   "warnings": 18
+ },
+ {
+   "year": 2021,
+   "month": 6,
+   "tickets": 88,
+   "warnings": 28
+ },
+ {
+   "year": 2021,
+   "month": 7,
+   "tickets": 37,
+   "warnings": 28
+ },
+ {
+   "year": 2021,
+   "month": 8,
+   "tickets": 33,
+   "warnings": 45
+ },
+ {
+   "year": 2021,
+   "month": 9,
+   "tickets": 34,
+   "warnings": 69
+ },
+ {
+   "year": 2021,
+   "month": 10,
+   "tickets": 74,
+   "warnings": 69
+ },
+ {
+   "year": 2021,
+   "month": 11,
+   "tickets": 40,
+   "warnings": 72
+ },
+ {
+   "year": 2021,
+   "month": 12,
+   "tickets": 27,
+   "warnings": 99
+ },
+ {
+   "year": 2022,
+   "month": 1,
+   "tickets": 98,
+   "warnings": 98
+ },
+ {
+   "year": 2022,
+   "month": 2,
+   "tickets": 36,
+   "warnings": 70
+ },
+ {
+   "year": 2022,
+   "month": 3,
+   "tickets": 96,
+   "warnings": 68
+ },
+ {
+   "year": 2022,
+   "month": 4,
+   "tickets": 10,
+   "warnings": 18
+ },
+ {
+   "year": 2022,
+   "month": 5,
+   "tickets": 55,
+   "warnings": 39
+ },
+ {
+   "year": 2022,
+   "month": 6,
+   "tickets": 21,
+   "warnings": 51
+ },
+ {
+   "year": 2022,
+   "month": 7,
+   "tickets": 59,
+   "warnings": 52
+ },
+ {
+   "year": 2022,
+   "month": 8,
+   "tickets": 11,
+   "warnings": 46
+ },
+ {
+   "year": 2022,
+   "month": 9,
+   "tickets": 67,
+   "warnings": 48
+ },
+ {
+   "year": 2022,
+   "month": 10,
+   "tickets": 87,
+   "warnings": 76
+ },
+ {
+   "year": 2022,
+   "month": 11,
+   "tickets": 44,
+   "warnings": 31
+ },
+ {
+   "year": 2022,
+   "month": 12,
+   "tickets": 62,
+   "warnings": 22
+ },
+ {
+   "year": 2023,
+   "month": 1,
+   "tickets": 93,
+   "warnings": 85
+ },
+ {
+   "year": 2023,
+   "month": 2,
+   "tickets": 83,
+   "warnings": 26
+ },
+ {
+   "year": 2023,
+   "month": 3,
+   "tickets": 31,
+   "warnings": 41
+ },
+ {
+   "year": 2023,
+   "month": 4,
+   "tickets": 31,
+   "warnings": 96
+ },
+ {
+   "year": 2023,
+   "month": 5,
+   "tickets": 35,
+   "warnings": 70
+ }
+]
