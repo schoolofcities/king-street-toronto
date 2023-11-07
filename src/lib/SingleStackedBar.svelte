@@ -1,6 +1,6 @@
 <script>
 
-	let percentTicketed = 10
+	let percentTicketed = 2.667
 
 	const margin = { top: 1, bottom: 1, left: 1, right: 1 };
 	let divWidth;

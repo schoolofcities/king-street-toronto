@@ -6,17 +6,13 @@
     import violations2019 from "../data/violations2019.json";
 
     // grouping and summing total violations by date
-
     const datesgroups2019 = group(violations2019, d => d.date);
-
     const resultArray = Array.from(datesgroups2019, ([date, violations2019]) => ({ date, sum_violations: sum(violations2019, d => d.sum_violations) }));
 
-    console.log(resultArray);
 
     // chart layout parameters
-
     let width;
-    const height = 300;
+    const height = 400;
     const marginTop = 40;
     const marginRight = 10;
     const marginBottom = 40;
@@ -165,16 +161,9 @@
 
 
 <style>
-    /* #total-violations-chart {
-        background-color: none;
-        margin: 0 auto;
-        width: 100%;
-    } */
-
     .scatter-plot {
         width: 100%;
-        height: 301px;
-        border-top: dashed 1px var(--brandGray);
+        height: 401px;
     }
 
     .axisLine {

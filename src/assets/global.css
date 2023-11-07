@@ -67,6 +67,10 @@ a {
     color: var(--brandMedBlue);
 }
 
+a:hover {
+    color: var(--brandMedGreen);
+}
+
 .title {
     background-color: none;
     max-width: 700px;
@@ -93,6 +97,16 @@ a {
     margin: 0 auto;
     padding-left: 18px;
     padding-right: 18px;
+}
+
+.chartGrid2019 {
+    margin: 0 auto;
+    padding-left: 18px;
+    padding-right: 18px;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Max 3 columns per row */
+    grid-gap: 10px; /* Adjust the gap between items as needed */
 }
 
 .yellow {
