@@ -4,6 +4,8 @@
     import { onDestroy } from 'svelte';
 
     import kingSt2019 from "../../assets/king-st-2019.jpg";
+    import kingBathurst from "../../assets/king-bathurst-112023.jpg";
+    import kingSt2023ticket from "../../assets/king-st-ticket-052023.jpg";
 
     import TopOfSofC from "$lib/TopSofC.svelte";
     import SingleStackedBar from '$lib/SingleStackedBar.svelte';
@@ -30,7 +32,7 @@
 <main>
 
     <div class="counter-text">
-        <p>~Number of cars that have disobeyed traffic laws on King Street since opening this page: <i>(estimated from historical data)</i></p>
+        <p>~Number of cars that have disobeyed traffic laws on King Street since opening this page: <i>(estimated from historical data averages)</i></p>
     </div>
     <div class="counter">
         <h1>{count}</h1>
@@ -59,9 +61,9 @@
             In November 2017 the City of Toronto altered traffic restrictions on King Street to give priority to public transit over private vehicles. Since the initiation of the project, cars have not been allowed to travel straight or make left turns at many intersections.
         </p>
         <p>
-            While the project has been largely successful in removing traffic, reducing travel times by transit, and improving transit reliability (e.g. see <a href="https://www.toronto.ca/city-government/planning-development/planning-studies-initiatives/king-street-pilot/data-reports-background-materials/">City of Toronto</a> reports and dashboards), many have raised concerns over traffic violations at intersections, specifically drivers illegally driving straight through intersections or making left-turns, and the lack of enforcement of these rules (<a href="https://globalnews.ca/news/9577392/motorists-breaking-rules-toronto-king-street-transit-corridor/">Global News</a>, <a href="https://www.cbc.ca/news/canada/toronto/traffic-tickets-transit-king-toronto-violation-1.5263557">CBC News</a>, <a href="https://www.thestar.com/news/gta/video-how-many-drivers-are-ignoring-the-rules-on-the-king-street-transit-corridor/article_3c87b687-400f-586c-aeae-997e285fcd81.html">Toronto Star</a>).
+            While the project has been largely successful in evaporating traffic, reducing travel times by transit, and improving transit reliability (e.g. see <a href="https://www.toronto.ca/city-government/planning-development/planning-studies-initiatives/king-street-pilot/data-reports-background-materials/">City of Toronto</a> reports and dashboards), many have raised concerns over traffic violations at intersections, specifically drivers illegally driving straight through intersections or making left-turns, and the lack of enforcement of these rules (e.g. <a href="https://globalnews.ca/news/9577392/motorists-breaking-rules-toronto-king-street-transit-corridor/">Global News</a>, <a href="https://www.cbc.ca/news/canada/toronto/traffic-tickets-transit-king-toronto-violation-1.5263557">CBC News</a>, <a href="https://www.thestar.com/news/gta/video-how-many-drivers-are-ignoring-the-rules-on-the-king-street-transit-corridor/article_3c87b687-400f-586c-aeae-997e285fcd81.html">Toronto Star</a>).
         </p>
-        <p>
+        <p> 
             We requested and analyzed data on intersection-level vehicle movement data from the City of Toronto as well as traffic tickets from Toronto Police from 2016 to mid-2023. 
         </p>
         <p>
@@ -102,24 +104,25 @@
 
     <div class="text">
 
-        <h3>Initial Successes and Impacts</h3>
-
         <p>
-            The initial successes and impacts of the King Street Pilot/Transit Priority Corridor are well documented in the <a href="https://www.toronto.ca/city-government/planning-development/planning-studies-initiatives/king-street-pilot/data-reports-background-materials/">dashboard-style reports</a> published by the City of Toronto, in cooperation with TTC. 
-        </p>
-        <p>
-            The project decreased transit travel times, and improved reliability, and initially led to an increase in ridership. The TTC added increased service to the 504 route as a response to the project's success (<a href="https://www.toronto.ca/legdocs/mmis/2019/cc/bgrd/backgroundfile-132032.pdf">City of Toronto</a>; <a href="https://www.thestar.com/news/gta/king-st-pilot-boosting-streetcar-ridership-ttc/article_8718cdce-0859-55e8-8397-af06878dbbde.html">The Star</a>). There was also increased cycling volumes and pedestrian volumes on King Street, as the street became safer due to there being fewer cars. Car volumes on King decreased by XX%, and while there was some increase to traffic volume on nearby parallel streets, there was minimal impact to travel times on those streets. Overall, the King Street Transit Priority Corridor was considered a success, and was used as a model for transit prioritization elsewhere (e.g. 14th Street in New York City).
+            The TTC added increased service to the 504 route as a response to the project's success (<a href="https://www.toronto.ca/legdocs/mmis/2019/cc/bgrd/backgroundfile-132032.pdf">City of Toronto</a>; <a href="https://www.thestar.com/news/gta/king-st-pilot-boosting-streetcar-ridership-ttc/article_8718cdce-0859-55e8-8397-af06878dbbde.html">The Star</a>). There was also increased cycling volumes and pedestrian volumes on King Street, as the street became safer due to there being fewer cars. Car volumes on King decreased by XX%, and while there was some increase to traffic volume on nearby parallel streets, there was minimal impact to travel times on those streets. Overall, the King Street Transit Priority Corridor was considered a success, and was used as a model for transit prioritization elsewhere (e.g. 14th Street in New York City).
         </p>
 
     </div>
 
     <div class="text">
 
-        <h3>Analyzing Violations with Traffic Volume and Ticket Data</h3>
+        <h3>Analyzing Traffic Violations</h3>
 
         <p>
             To understand how many drivers have been ignoring signage and breaking the law in the Corridor, and to see how this is changing over time, we analyzed traffic volume data provided by the City of Toronto for each signalized intersection in the Corridor that has restricted movements. 
         </p>
+
+        <img width=100% height=100% src={kingBathurst} style="border-bottom: 1px solid #1E3765; border-top: 1px solid #1E3765;" alt="Car driving illegally eastbound on King through the Bathurst St intersection">
+        <p class="note">
+            Bathurst & King intersection, looking east, with a car driving illegally through the intersection. November 8, 2023.
+        </p>
+
         <p>
             The traffic volume data was pre-aggregated by hour, and the earliest data collection began in October 2017 at a few intersections before the start of the King Street Pilot, which was used by the city to establish baselines for their analyses. The most recent data that we use, available at only a few intersections, are as recent as May 2023. The data provided are not complete throughout the time period of the King Street Pilot to today, as the data collection process changed in 2019 and some sensors were decomissioned in 2020. Before 2019, data collection was sporadic and conducted every couple of weeks and required human assistance. In 2019, edge processing units were installed and no longer relied on human assistance, and so data collection for most intersections became much more continuous.
         </p>
@@ -201,9 +204,7 @@
 
         <h3>Changing Patterns in Enforcement?</h3>
 
-        <p>
-
-        </p>
+        <img width=100% height=100% src={kingSt2023ticket} alt="Ticket">
 
         <MonthlyTicketsBar variable="tickets"/>
 

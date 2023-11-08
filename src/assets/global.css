@@ -77,6 +77,7 @@ main {
     padding: 0px;
     margin-top: 8px;
     font-family: RobotoRegular;
+    color: var(--brandDarkBlue);
     font-size: 14px;
     line-height: 18px;
     text-align: left;
@@ -87,7 +88,7 @@ main {
 h1 {
     font-family: TradeGothicBold;
     color: var(--brandRed);
-    font-size: 52px;
+    font-size: 47px;
 }
 
 h2 {
@@ -107,6 +108,7 @@ p {
     font-size: 17px;
     line-height: 27px;
 }
+
 
 a {
     text-decoration: underline;
@@ -145,6 +147,14 @@ a:hover {
     margin: 0 auto;
     padding-left: 18px;
     padding-right: 18px;
+}
+
+.note {
+    font-family: RobotoRegular;
+    font-size: 13px;
+    color: var(--brandDarkBlue);
+    margin-top: -1px;
+    line-height: 16px;
 }
 
 .chartGrid2019 {
