@@ -25,7 +25,7 @@
 		padding-left: 0px;
 		padding-right: 0px;
 		z-index: 5;
-		opacity: 0.92;
+		opacity: 0.97;
 	}
 
 	#logo {
