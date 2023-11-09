@@ -1,28 +1,35 @@
-# King Street Toronto
+## King Street Toronto
+
 Analysis and visualization of through-traffic violations and turning violations on the transit-priority section of King Street in Toronto.
 
-## Background
-The King Street Transit Priority Corridor started as the King Street Pilot project in 2017 to improve transit reliability, speed, and capacity by giving priority to streetcars over private vehicles. The pilot project was approved by City Council on July 4, 2017, and was launched November 12, 2017, expecting to operate as such for one year. The City Council made the pilot project into a permanent transit priority corridor on April 16, 2019. 
+https://schoolofcities.github.io/king-street-toronto/traffic-violations/
 
-The Corridor spans the length of King St from Bathurst St in the west to Jarvis St in the east. Traffic data was collected by the City of Toronto at several intersections from Bathurst to Jarvis on King St (see table below). 
+### Data
 
-| UID |    Intersection   |
-|:--:|:-----------------:|
-| 10 |  King / Bathurst  |
-| 11 |  King / Portland  |
-| 12 |   King / Spadina  |
-| 13 |    King / Peter   |
-| 32 |    King / John    |
-| 14 |   King / Simcoe   |
-| 15 | King / University |
-| 16 |    King / York    |
-| 17 |     King / Bay    |
-| 18 |    King / Yonge   |
-| 19 |   King / Church   |
-| 20 |   King / Jarvis   |
+Intersection movement data were provided by the City of Toronto.
 
-There are several traffic rules that were put into place for the Corridor, most of which are described [here](https://www.toronto.ca/city-government/planning-development/planning-studies-initiatives/king-street-pilot/how-to-use-the-king-street-transit-pilot/). A more detailed description of the restrictions can be found [here](https://www.toronto.ca/wp-content/uploads/2018/05/8ead-King-Street-Brochure_May2018_Web.pdf). 
+Traffic ticket data were acquired via a Freedom of Information request from Toronto Police.
 
-The restrictions and violations that we are investigating are in regards to private vehicles, and how they move at intersections of the Corridor. Namely, vehicles are not supposed to drive through the Bathurst or Jarvis intersections on King but can turn left or right off of King, through traffic on King not allowed at any of the intersections in the Corridor, and no left turns on King at signalized intersections in the Corridor. In reality, some intersections do allow for through traffic because they are oneway streets (Simcoe, York), but for others it is less clear (John, Bay). 
+View the `data` sub-folder for data tables from each
 
-Taxi vehicles are allowed through intersections between 10pm and 5am. 
+### Exploratory Analysis
+
+The `analysis` sub-folder contains several Jupyter Notebooks of our initial explorations of the intersection movement data, as well as filtering the data that appears on the web-page.
+
+
+### Development
+
+To build and develop the web-page locally:
+
+```
+git clone https://github.com/schoolofcities/king-street-toronto
+npm install
+npm run dev
+```
+
+Building
+
+```
+npm run build
+npm run preview
+```

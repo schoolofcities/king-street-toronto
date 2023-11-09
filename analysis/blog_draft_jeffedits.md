@@ -53,7 +53,7 @@ In 2022 and 2023, the public perception of the enforcement of the King Street tr
 
 Toronto Police say there is a general lack of interest in following traffic rules across the city. Toronto Police have competing priorities and cannot constantly patrol the Corridor, but tickets on King Street are still being issued. 
 
-From January to March 17, 2023, 1852 tickets were issued in the Corridor for disobeying traffic signs, including provincial offence notices, offence summons for drivers with multiple driving convictions, and written warnings. (REPLACE WITH OUR OWN DATA IF POSSIBLE)
+From January to March 17, 2023, 1852 tickets were issued in the Corridor for disobeying traffic signs, including provincial offense notices, offense summons for drivers with multiple driving convictions, and written warnings. (REPLACE WITH OUR OWN DATA IF POSSIBLE)
 
 The Corridor's city councillor Malik and public transit advocates are demanding explanations for the car traffic in the Corridor, and emphasize a need to revisit the redesign of King Street, calling on the city and police to do their part. They feel that the Transit Priority Corridor is no longer a priority for the city, and that King Street is just like any other street again ([CBC News](https://www.cbc.ca/news/canada/toronto/king-street-redesign-transit-priority-corridor-councillor-advocate-1.6689566)).
 

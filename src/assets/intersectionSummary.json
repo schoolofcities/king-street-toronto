@@ -1,0 +1,15 @@
+[
+	{ "UID": 10, "Intersection": "Bathurst", "averageViolations2019": 1064 },
+	{ "UID": 11, "Intersection": "Portland", "averageViolations2019": 1106 },
+	{ "UID": 12, "Intersection": "Spadina", "averageViolations2019": 786 },
+	{ "UID": 13, "Intersection": "Peter", "averageViolations2019": 934 },
+	{ "UID": 32, "Intersection": "John", "averageViolations2019": 96 },
+	{ "UID": 14, "Intersection": "Simcoe (no data)", "averageViolations2019": 0 },
+	{ "UID": 15, "Intersection": "University", "averageViolations2019": 759 },
+	{ "UID": 16, "Intersection": "York", "averageViolations2019": 59 },
+	{ "UID": 17, "Intersection": "Bay", "averageViolations2019": 133 },
+	{ "UID": 18, "Intersection": "Yonge", "averageViolations2019": 813 },
+	{ "UID": 19, "Intersection": "Church", "averageViolations2019": 601 },
+	{ "UID": 20, "Intersection": "Jarvis", "averageViolations2019": 522 }
+]
+  
