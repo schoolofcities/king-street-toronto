@@ -19,7 +19,7 @@
     function incrementCount() {
         count += 1;
     }
-    const interval = setInterval(incrementCount, 15000);
+    const interval = setInterval(incrementCount, 9000);
     onDestroy(() => {
         clearInterval(interval);
     });
@@ -67,7 +67,7 @@
             We requested data on intersection-level vehicle movement data from the City of Toronto as well as traffic tickets from Toronto Police from 2016 to mid-2023 to analyze how often drivers make illegal movements on King Street, and how often they are getting ticketed.
         </p>
         <p>
-            From this data, we find there are approximately <span class="bold">5,000 illegal turns and thru movements at intersections per day on the King Street Transit Priority Corridor</span>, but only <span class="yellow">3% are being ticketed by Toronto Police</span>, on average. 
+            From this data, we find there are approximately <span class="bold">6,800 illegal turns and thru movements at intersections per day on the King Street Transit Priority Corridor</span>, but only <span class="yellow">3% are being ticketed by Toronto Police</span>, on average. 
             Thus <span class="red">97% of drivers are not being fined for breaking the law</span>. At a range of $85 to $110 per ticket, this is a massive missed opportunity for revenue for the City that could be achieved with increased enforcement, particularly via automatic enforcement cameras.
         </p>
         <p>
@@ -102,7 +102,7 @@
     <div class="text">
 
         <p>
-            The TTC added increased service to the 504 route as a response to the project's success (<a href="https://www.toronto.ca/legdocs/mmis/2019/cc/bgrd/backgroundfile-132032.pdf">City of Toronto</a>; <a href="https://www.thestar.com/news/gta/king-st-pilot-boosting-streetcar-ridership-ttc/article_8718cdce-0859-55e8-8397-af06878dbbde.html">The Star</a>). There was also increased cycling volumes and pedestrian volumes on King Street, as the street became safer due to there being fewer cars. Car volumes on King decreased by XX%, and while there was some increase to traffic volume on nearby parallel streets, there was minimal impact to travel times on those streets. Overall, the King Street Transit Priority Corridor was considered a success, and was used as a model for transit prioritization elsewhere (e.g. 14th Street in New York City).
+            The TTC added increased service to the 504 route as a response to the project's success (<a href="https://www.toronto.ca/legdocs/mmis/2019/cc/bgrd/backgroundfile-132032.pdf">City of Toronto</a>; <a href="https://www.thestar.com/news/gta/king-st-pilot-boosting-streetcar-ridership-ttc/article_8718cdce-0859-55e8-8397-af06878dbbde.html">The Star</a>). There was also increased cycling volumes and pedestrian volumes on King Street, as the street became safer due to there being fewer cars. Car volumes on King decreased, in some locations by more than 80%, and while there was some increase to traffic volume on nearby parallel streets, there was minimal impact to travel times on those streets (see <a href="https://www.toronto.ca/wp-content/uploads/2019/04/8fb5-TS_King-Street-Annual-Dashboard_Final.pdf">City of Toronto</a> report for details). Overall, the King Street Transit Priority Corridor was considered a success, and was used as a model for transit prioritization elsewhere (e.g. 14th Street in New York City).
         </p>
 
     </div>
@@ -121,11 +121,13 @@
         </p>
 
         <p>
-            The traffic volume data was pre-aggregated by hour, and the earliest data collection began in October 2017 at a few intersections before the start of the King Street Pilot, which was used by the city to establish baselines for their analyses. The most recent data that we use, available at only a few intersections, are as recent as May 2023. The data provided are not complete throughout the time period of the King Street Pilot to today, as the data collection process changed in 2019 and some sensors were decomissioned in 2020. Before 2019, data collection was sporadic and conducted every couple of weeks and required human assistance. In 2019, edge processing units were installed and no longer relied on human assistance, and so data collection for most intersections became much more continuous.
+            The City's intersection-level traffic volume data is collected via automatic cameras and then image recognition algorithm software is used to tag any vehicle that travels through an intersection. Included is the direction and movement of each vehicle (e.g. travelling from east to west and turning north at the intersection). This data was provided to us as counts for each direction and movement at each intersection per hour. The earliest data collection began in October 2017 at a few intersections before the start of the King Street Pilot, which was used by the city to establish baselines for their analyses. The most recent data that we use, available at only a few intersections, are as recent as May 2023. 
         </p>
         <p>
-            A limitation of the data is that there is no differentiation in type of private vehicles, particularly between taxis and other cars. 
-            Taxi vehicles are permitted to make thru movements at intersections overnight, between 10pm and 5am, and thus our data analysis will not include traffic volume data from that time period. Therefore any counts that we present are likely a slight under-estimation due to not accounting for violations that occur overnight.
+            The data provided are not complete throughout the time period of the King Street Pilot to today, as the data collection process changed in 2019 and some sensors were decomissioned in 2020. Before 2019, data collection was sporadic and conducted every couple of weeks and required human assistance. In 2019, edge processing units were installed and no longer relied on human assistance, and so data collection for most intersections became much more continuous.
+        </p>
+        <p>
+            A limitation of the data is that there is no differentiation in type of private vehicles, particularly between taxis and regular cars. Taxi vehicles are permitted to make thru movements at intersections overnight, between 10pm and 5am. The data also do not distinguish between smaller authorized vehicles (e.g. police cars) from regular private vehicles. To fairly account for these limitations we limit our analysis to just the 5am to 10pm period, understanding that we are not counting private vehicle violations overnight and slightly over-estimating violations during the day due to authorized vehicles.
         </p>
         <p>
             We also wanted to compare the number of traffic violations with the number of tickets handed out by Toronto Police (i.e. what % of illegal movements were actually being ticketed?). For data on traffic tickets, we underwent a freedom of information request with Toronto Police, asking for all tickets and warnings given out on the King Street corridor for traffic violations from 2016 to mid-2023. The freedom of information request cost $180 and took about 4 months.
@@ -147,17 +149,17 @@
         <VerticalBarChart />
 
         <p>
-            In total, this amounts to <u>5,000 traffic violations</u> per day on average across the entire corridor in 2019. (Note that this is likely an underestimation due to not including the intersection at Simcoe and any violations that occur between 10pm and 5am).
+            In total, this amounts to <u>6,873 traffic violations</u> per day on average across the entire corridor in 2019. (Note that this is likely an underestimation due to not including the intersection at Simcoe and any violations that occur between 10pm and 5am).
         </p>
-        <p>
+        <!-- <p>
             Let's take a look at how this varies over time during this period. Each red circle on this plot is the total number of traffic violations on each day, and the blue line is a rolling average (based on a <a href="https://en.wikipedia.org/wiki/Local_regression">LOESS regression</a> function).
-        </p>
+        </p> -->
         
-        <TotalViolations2019Chart />
+        <!-- <TotalViolations2019Chart />
 
         <p>
             (Some text describing this plot above)
-        </p>
+        </p> -->
 
     </div>
 
@@ -170,7 +172,11 @@
         </p>
 
         <p>
-            While we don't have data at all intersections, we can still take a look at trends for each of these  intersections from 2020 to 2023, and compare each to 2019 average number violations per day.
+            While we don't have data at all intersections, we can still take a look at trends for each of the  intersections that do have data from 2020 to 2023, and compare each to 2019 average number violations per day. 
+        </p>
+
+        <p>
+            Each red circle on the plots below are the total number of traffic violations on each day at each intersection, and the dark blue line is a rolling average (based on a <a href="https://en.wikipedia.org/wiki/Local_regression">LOESS regression</a> function). The gaps in the red bars are for days where there was no data available. The blue dashed line is the 2019 average.
         </p>
 
         
