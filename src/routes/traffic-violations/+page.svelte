@@ -202,6 +202,9 @@
         <h3>Changing Patterns in Enforcement?</h3>
 
         <img width=100% height=100% src={kingSt2023ticket} alt="Ticket">
+        <p class="note">
+            Car being pulled over by Toronto Police just after illegally driving westbound through Bathurst. May 15, 2023.
+        </p>
 
         <MonthlyTicketsBar variable="tickets"/>
 
