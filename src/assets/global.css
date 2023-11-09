@@ -57,6 +57,7 @@ main {
 .counter h1 {
     margin: 0 auto;
     color: white;
+    text-shadow: none;
 }
 .counter-text {
     position: fixed;
@@ -88,13 +89,14 @@ main {
 h1 {
     font-family: TradeGothicBold;
     color: var(--brandRed);
-    font-size: 47px;
+    font-size: 48px;
+    text-shadow: white 2px 0 3px;
 }
 
 h2 {
     font-family: TradeGothicBold;
     color: var(--brandDarkBlue);
-    font-size: 28px;
+    font-size: 30px;
 }
 
 h3 {
@@ -120,10 +122,9 @@ a:hover {
 }
 
 .title {
-    background-color: none;
     max-width: 700px;
     margin: 0 auto;
-    margin-top: -1px;
+    margin-top: -86px;
     margin-bottom: -10px;
     padding-left: 18px;
     padding-right: 18px;
