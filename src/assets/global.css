@@ -182,9 +182,9 @@ a:hover {
 }
 
 .bold {
-    background-color: var(--brandLightBlue);
-    color: black;
-    font-weight: bold;
+    background-color: var(--brandDarkBlue);
+    color: white;
+    /* font-weight: bold; */
     padding-left: 2px;
     padding-right: 2px;
 }

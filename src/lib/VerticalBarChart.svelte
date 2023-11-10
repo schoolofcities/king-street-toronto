@@ -4,8 +4,8 @@
 	import {scaleLinear} from "d3";
 
 	let width;
-	const height = 300;
-	const marginTop = 55;
+	const height = 325;
+	const marginTop = 80;
     const marginRight = 45;
     const marginBottom = 100;
     const marginLeft = 45;
@@ -24,6 +24,8 @@
 	<svg width={width} {height} class="svg-content">
 
 		<text x="2" y="30" class="label">AVERAGE NUMBER OF TRAFFIC VIOLATIONS PER DAY IN 2019</text>
+
+		<text x="2" y="50" class="label">For Illegal Left-Turn & Thru Movements on King St (Jarvis to Bathurst)</text>
 
 		<line 
 			class="axisLine" 
