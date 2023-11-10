@@ -211,6 +211,13 @@
         
         {/each}
         
+        <path 
+            d={lineGenerator(regressionGenerator(data))} 
+            stroke="#F1C500" 
+            stroke-width="2" 
+            fill="none" 
+        />
+
         <line
             y1={yScale(average2019)}
             x1={marginLeft} 
@@ -218,16 +225,30 @@
             x2={width - marginRight}
             stroke-width="2"
             stroke-dasharray="6 3"
-            stroke="#6FC7EA"
+            stroke="#1E3765"
             opacity=1
         />
 
-        <path 
-            d={lineGenerator(regressionGenerator(data))} 
-            stroke="#1E3765" 
-            stroke-width="2" 
-            fill="none" 
+        <line
+            y1={yScale(1750)}
+            x1={xScale(parseDate("2021-01-01"))} 
+            y2={yScale(average2019) - 5} 
+            x2={xScale(parseDate("2021-01-01"))}
+            stroke-width="1"
+            stroke="#1E3765"
+            opacity=1
         />
+
+        <text 
+            x={xScale(parseDate("2021-01-01")) - 4} 
+            y={yScale(1800)} 
+            text-anchor="start"
+            fill="#1E3765"
+            class="labelavg">
+            2019 Average
+        </text>
+
+        
 
     </g>
     </svg>
@@ -271,5 +292,11 @@
         font-family: RobotoRegular, sans-serif;
         font-size: 13.5px;
         fill: var(--brandGray80)
+    }
+
+    .labelavg {
+        font-family: RobotoRegular, sans-serif;
+        font-size: 13.5px;
+        fill: var(--brandDarkBlue);
     }
 </style>

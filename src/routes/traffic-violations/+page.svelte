@@ -64,11 +64,11 @@
             While the project has been successful in evaporating traffic, reducing travel times by transit, and improving transit reliability on King Street (e.g. see <a href="https://www.toronto.ca/city-government/planning-development/planning-studies-initiatives/king-street-pilot/data-reports-background-materials/">City of Toronto</a> reports and dashboards), many have raised concerns over the extent of traffic violations at intersections, specifically drivers illegally travelling straight through intersections or making illegal left-turns, as well as the lack of enforcement of these rules (e.g. <a href="https://globalnews.ca/news/9577392/motorists-breaking-rules-toronto-king-street-transit-corridor/">Global News</a>, <a href="https://www.cbc.ca/news/canada/toronto/traffic-tickets-transit-king-toronto-violation-1.5263557">CBC News</a>, <a href="https://www.thestar.com/news/gta/video-how-many-drivers-are-ignoring-the-rules-on-the-king-street-transit-corridor/article_3c87b687-400f-586c-aeae-997e285fcd81.html">Toronto Star</a>).
         </p>
         <p>
-            We requested data on intersection-level vehicle movement data from the City of Toronto as well as traffic tickets from Toronto Police from 2016 to mid-2023 to analyze how often drivers make illegal movements on King Street, and how often they are getting ticketed.
+            We requested data on intersection-level vehicle movement data from the City of Toronto as well as traffic tickets from Toronto Police from 2016 to mid-2023 to analyze how often drivers make illegal movements on King Street, and how often they were receiving traffic tickets.
         </p>
         <p>
-            From this data, we find there are approximately <span class="bold">6,800 illegal turns and thru movements at intersections per day on the King Street Transit Priority Corridor</span>, but only <span class="yellow">3% are being ticketed by Toronto Police</span>, on average. 
-            Thus <span class="red">97% of drivers are not being fined for breaking the law</span>. At a range of $85 to $110 per ticket, this is a massive missed opportunity for revenue for the City that could be achieved with increased enforcement, particularly via automatic enforcement cameras.
+            From this data, we find there are approximately <span class="bold">6,800 illegal turns and thru movements at intersections per day on the King Street Transit Priority Corridor</span>, but <span class="yellow">less than 1% are being ticketed by Toronto Police</span>, on average. 
+            Thus <span class="red">99% of drivers are not being fined for breaking the law</span>. At a range of $85 to $110 per ticket, this is a massive missed opportunity for revenue for the City that could be achieved with increased enforcement, particularly via automatic enforcement cameras.
         </p>
         <p>
             Below we provide a brief background on the King Street Transit Priority Corridor and then visualize data on traffic violations and tickets over time.
@@ -168,7 +168,7 @@
         <h3>Traffic Violations from 01/2020 to 05/2023</h3>
 
         <p>
-            On June 15, 2020, half of the traffic volume sensors in the King Street Transit Priority Corridor were decomissioned and relocated to support other transportation projects elsewhere in the City. The remaining six traffic volume sensors were located at Bathurst, Spadina, University, Bay, Yonge, and Jarvis. 
+            On June 15, 2020, half of the traffic volume sensors in the King Street Transit Priority Corridor were decomissioned and relocated to support other transportation projects elsewhere in the City.
         </p>
 
         <p>
@@ -176,7 +176,7 @@
         </p>
 
         <p>
-            Each red circle on the plots below are the total number of traffic violations on each day at each intersection, and the dark blue line is a rolling average (based on a <a href="https://en.wikipedia.org/wiki/Local_regression">LOESS regression</a> function). The gaps in the red bars are for days where there was no data available. The blue dashed line is the 2019 average.
+            Each red circle on the plots below are the total number of traffic violations on each day at each intersection, and the yellow line is a rolling average (based on a <a href="https://en.wikipedia.org/wiki/Local_regression">LOESS regression</a> function). The gaps in the red bars are for days where there was no data available. The dark blue dashed line is the 2019 average.
         </p>
 
         
@@ -198,19 +198,19 @@
             The number of violations per day from 2020 to 2023 fluctuate over time, and are often in relation to COVID-19 closures that reduced traffic overall in the city.
         </p>    
         <p>    
-            Overall though, the number of traffic violations in the latter half of 2022 and into 2023 are very close to 2019 averages. While we do not have complete data across the all intersections, based on the data that we do have, we can be pretty confident that the number of violations per day (excluding 10pm to 5am) has returned to the 2019 level of approximately 5,000 per day.
+            Overall though, the number of traffic violations in the latter half of 2022 and into 2023 are very close to 2019 averages. While we do not have complete data across the all intersections, based on the data that we do have, we can be pretty confident that the number of violations per day (excluding 10pm to 5am) has returned to the 2019 level of approximately 6,800 per day.
         </p>
 
     </div>
 
     <div class="text">
 
-        <h3>Changing Patterns in Enforcement?</h3>
-
         <img width=100% height=100% src={kingSt2023ticket} alt="Ticket">
         <p class="note">
             Car being pulled over by Toronto Police just after illegally driving westbound through Bathurst. May 15, 2023.
         </p>
+
+        <h3>Changing Patterns in Enforcement?</h3>
 
         <MonthlyTicketsBar variable="tickets"/>
 
