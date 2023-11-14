@@ -212,9 +212,16 @@
 
         <h3>Changing Patterns in Enforcement?</h3>
 
-        <MonthlyTicketsBar variable="tickets"/>
+        <p>
+            We also chart how traffic enforcement has changed over time, both in terms of number of tickets and written warnings. At the onset of the pilot in November 2017, there was a large number of warnings, which soon subsided. It is not clear to us in the data we acquired about whether since then why someone violating traffic laws would get a warning instead of a ticket.
+        </p>
+        <p>
+            The number of tickets per month flucutated but stayed around an average of 500 per month up until spring 2020 where it dropped, likely related to COVID-19. However, the number of tickets has not since increased to pre-COVID levels.
+        </p>
 
-        <MonthlyTicketsBar variable="warnings"/>
+        <MonthlyTicketsBar variable="Tickets"/>
+
+        <MonthlyTicketsBar variable="Warnings"/>
 
     </div>
 

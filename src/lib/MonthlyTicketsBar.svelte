@@ -8,8 +8,8 @@
     export let variable;
 
 	let labelName = "TICKETS";
-	let barColour = "#F1C500";
-	if (variable === "warnings") {
+	let barColour = "#007FA3";
+	if (variable === "Warnings") {
 		labelName = "WARNINGS";
 		barColour = "#6FC7EA";
 	};
@@ -17,19 +17,21 @@
 
     // chart layout parameters
     let width;
-    const height = 300;
+    const height = 420;
     const marginTop = 80;
     const marginRight = 10;
     const marginBottom = 20;
     const marginLeft = 50;
 
+    // bar width as function of div width
+
     // defining x and y scales
     $: xScale = scaleLinear()
-        .domain([2016, 2023.5])
+        .domain([2017, 2023.5])
         .range([marginLeft, width - marginRight]);
 
     $: yScale = scaleLinear()
-        .domain([0, 150])
+        .domain([0, 1100])
         .range([height - marginBottom, marginTop]);
 
 </script>
@@ -41,7 +43,7 @@
 
     <svg width={width} height={height}>
 
-		{#each [150, 100, 50, 0] as yMarker}
+		{#each [1000, 750, 500, 250, 0] as yMarker}
             <line 
                 class="gridLine" 
                 x1={marginLeft - 10} 
@@ -67,7 +69,7 @@
             </text>
         {/each}
 
-		{#each [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023] as year}
+		{#each [2017, 2018, 2019, 2020, 2021, 2022, 2023] as year}
 			<line 
 				class="gridLine" 
 				x1={xScale(year + 1/24)}
@@ -104,15 +106,19 @@
 
 		{#each data as item}
 
-            <line 
-                y1={height - marginBottom}
-                x1={xScale(item.year + item.month/12)} 
-                y2={yScale(item[variable])} 
-                x2={xScale(item.year + item.month/12)}
-                stroke-width="5" 
-                stroke={barColour}
-                opacity=1
-            />
+            {#if item.Year > 2016}
+
+                <line 
+                    y1={height - marginBottom}
+                    x1={xScale(item.Year + item.Month/12)} 
+                    y2={yScale(item[variable])} 
+                    x2={xScale(item.Year + item.Month/12)}
+                    stroke-width="5" 
+                    stroke={barColour}
+                    opacity=1
+                />
+
+            {/if}
 
         {/each}
 
