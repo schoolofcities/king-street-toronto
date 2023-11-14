@@ -24,6 +24,12 @@
     const marginLeft = 50;
 
     // bar width as function of div width
+    let barWidth = 5;
+    $: if (width < 600) {
+        barWidth = 3;
+    } else {
+        barWidth = 5;
+    };
 
     // defining x and y scales
     $: xScale = scaleLinear()
@@ -113,7 +119,7 @@
                     x1={xScale(item.Year + item.Month/12)} 
                     y2={yScale(item[variable])} 
                     x2={xScale(item.Year + item.Month/12)}
-                    stroke-width="5" 
+                    stroke-width="{barWidth}" 
                     stroke={barColour}
                     opacity=1
                 />
