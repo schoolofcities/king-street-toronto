@@ -10,9 +10,8 @@
     import TopOfSofC from "$lib/TopSofC.svelte";
     import SingleStackedBar from '$lib/SingleStackedBar.svelte';
     import corridorDetailedMap from '../../assets/corridor_web.svg';
-    import VerticalBarChart from '$lib/VerticalBarChart.svelte';
+    import VerticalBarChart from '$lib/VerticalBarChart2019.svelte';
     import ViolationsChart2020s from "$lib/ViolationsChart2020s.svelte";
-    import TotalViolations2019Chart from "$lib/TotalViolations2019Chart.svelte";
     import MonthlyTicketsBar from '$lib/MonthlyTicketsBar.svelte';
 
     let count = 0;
@@ -67,11 +66,14 @@
             We requested data on intersection-level vehicle movement data from the City of Toronto as well as traffic tickets from Toronto Police from 2016 to mid-2023 to analyze how often drivers make illegal movements on King Street, and how often they were receiving traffic tickets.
         </p>
         <p>
-            From this data, we find there are approximately <span class="bold">6,800 illegal turns and thru movements at intersections per day on the King Street Transit Priority Corridor</span>, but <span class="yellow">less than 1% are being ticketed by Toronto Police</span>, on average. 
-            Thus <span class="red">99% of drivers are not being fined for breaking the law</span>. At a range of $85 to $110 per ticket, this is a massive missed opportunity for revenue for the City that could be achieved with increased enforcement, particularly via automatic enforcement cameras.
+            From this data, we find there are approximately <span class="bold">6,800 illegal turns and thru movements at intersections per day on the King Street Transit Priority Corridor</span>, but <span class="yellow">less than 0.5% are being ticketed by Toronto Police</span>, on average. 
+            Thus <span class="red">more than 99.5% of drivers are not being fined for breaking the law</span> on the King Street Transit Priority Corridor. 
+        </p>
+        <p>    
+            At a range of $85 to $110 per ticket, this is a massive missed opportunity for revenue for the City that could be achieved with increased enforcement, particularly via automatic enforcement cameras. At the time of writing, Councillor Chris Moise had pushed forward an <a href="https://secure.toronto.ca/council/agenda-item.do?item=2023.MM12.1">item in council</a> for city staff to assess the feasibility of implementing automated traffic enforcement (to report back in the second quarter of 2024). Time will tell if this will be implemented in the (near) future.
         </p>
         <p>
-            Below we provide a brief background on the King Street Transit Priority Corridor and then visualize data on traffic violations and tickets over time.
+            Below we provide a brief background on the King Street Transit Priority Corridor, followed by our analysis and visualization of this data on traffic violations and traffic tickets.
         </p>
     </div>
 
@@ -80,7 +82,7 @@
         <h3>Background</h3>
 
         <p>
-            The King Street Transit Priority Corridor started as a pilot project in fall of 2017 to improve transit reliability, travel times, and capacity by giving priority to transit vehicles (primarily the 504 streetcar route) over private vehicles. 
+            The King Street Transit Priority Corridor started as a pilot project in fall of 2017 to improve transit reliability, travel times, and capacity by giving priority to transit vehicles (primarily the 504 Streetcar route) over private vehicles. 
         </p>
 
         <p>
@@ -121,13 +123,13 @@
         </p>
 
         <p>
-            The City's intersection-level traffic volume data is collected via automatic cameras and then image recognition algorithm software is used to tag any vehicle that travels through an intersection. Included is the direction and movement of each vehicle (e.g. travelling from east to west and turning north at the intersection). This data was provided to us as counts for each direction and movement at each intersection per hour. The earliest data collection began in October 2017 at a few intersections before the start of the King Street Pilot, which was used by the city to establish baselines for their analyses. The most recent data that we use, available at only a few intersections, are as recent as May 2023. 
+            The City collects intersection-level traffic volume data via automatic cameras. They then use image recognition tools to tag any vehicle that travels through an intersection. Included in this is the direction and movement of each vehicle (e.g. travelling from east to west and turning south at the intersection, i.e. a left turn). This data was provided to us as counts for each direction and movement at each intersection, summed for each hour. We were then able to filter out movements that were illegal. The earliest data collection began in October 2017 at a few intersections before the start of the King Street Pilot, which was used by the city to establish baselines for their analyses. The most recent data that we use, available at only a few intersections, are as recent as May 2023. 
         </p>
         <p>
             The data provided are not complete throughout the time period of the King Street Pilot to today, as the data collection process changed in 2019 and some sensors were decomissioned in 2020. Before 2019, data collection was sporadic and conducted every couple of weeks and required human assistance. In 2019, edge processing units were installed and no longer relied on human assistance, and so data collection for most intersections became much more continuous.
         </p>
         <p>
-            A limitation of the data is that there is no differentiation in type of private vehicles, particularly between taxis and regular cars. Taxi vehicles are permitted to make thru movements at intersections overnight, between 10pm and 5am. The data also do not distinguish between smaller authorized vehicles (e.g. police cars) from regular private vehicles. To fairly account for these limitations we limit our analysis to just the 5am to 10pm period, understanding that we are not counting private vehicle violations overnight and slightly over-estimating violations during the day due to authorized vehicles.
+            A limitation of the data is that there is no differentiation in the type of private vehicles, particularly between taxis and regular cars. Taxi vehicles are permitted to make thru movements at intersections overnight, between 10pm and 5am. The data also do not distinguish between smaller authorized vehicles (e.g. police cars) from regular private vehicles. To fairly account for these limitations we restrict our analysis to the 5am to 10pm period, understanding that we are not counting any private vehicle violations overnight, while conversely, slightly over-estimating violations during the day due to authorized vehicles.
         </p>
         <p>
             We also wanted to compare the number of traffic violations with the number of tickets handed out by Toronto Police (i.e. what % of illegal movements were actually being ticketed?). For data on traffic tickets, we underwent a freedom of information request with Toronto Police, asking for all tickets and warnings given out on the King Street corridor for traffic violations from 2016 to mid-2023. The freedom of information request cost $180 and took about 4 months.
@@ -146,11 +148,25 @@
            We first visualize the average number of violations (illegal thru + illegal turns) at each intersection along the Corridor per day.
         </p>
 
-        <VerticalBarChart />
+        <VerticalBarChart variable="averageViolations2019"/>
 
         <p>
-            In total, this amounts to <u>6,873 traffic violations</u> per day on average across the entire corridor in 2019. (Note that this is likely an underestimation due to not including the intersection at Simcoe and any violations that occur between 10pm and 5am).
+            In total, this amounts to <span class="bold">6,873 traffic violations per day</span> on average across the entire corridor in 2019. (Note that this is likely an underestimation due to not including the intersection at Simcoe and any violations that occur between 10pm and 5am).
         </p>
+
+        <p>
+            We can also similarly chart the number of tickets given at each intersection. For this, we are including all tickets given for <i>"Proceed Contrary to Sign at Intersection"</i> and <i>"Disobey Sign"</i> at intersections, and between the hours of 5pm and 10am to match with the violations data.
+        </p>
+
+
+        <VerticalBarChart variable="totalTickets2019"/>
+
+        <p>
+            This amounts to <span class="bold">17.5 traffic tickets per day</span> on average, 6,387 in total for all 365 days in 2019. These numbers are drastically lower than all violations in the chart above, 0.255% of the overall total number of violations estimated from the City's traffic volume data.
+        </p>
+
+
+
         <!-- <p>
             Let's take a look at how this varies over time during this period. Each red circle on this plot is the total number of traffic violations on each day, and the blue line is a rolling average (based on a <a href="https://en.wikipedia.org/wiki/Local_regression">LOESS regression</a> function).
         </p> -->
@@ -216,7 +232,10 @@
             We also chart how traffic enforcement has changed over time, both in terms of number of tickets and written warnings. At the onset of the pilot in November 2017, there was a large number of warnings, which soon subsided. It is not clear to us in the data we acquired about whether since then why someone violating traffic laws would get a warning instead of a ticket.
         </p>
         <p>
-            The number of tickets per month flucutated but stayed around an average of 500 per month up until spring 2020 where it dropped, likely related to COVID-19. However, the number of tickets has not since increased to pre-COVID levels.
+            The number of tickets per month fluctuated around an average of 500 per month up until spring 2020 where it dropped, likely related to COVID-19. However, the number of tickets has not since increased to pre-COVID levels.
+        </p>
+        <p>
+
         </p>
 
         <MonthlyTicketsBar variable="Tickets"/>
@@ -227,10 +246,10 @@
 
     <div class="text">
 
-        <h3>Final Thoughts</h3>
+        <h3>Further Information</h3>
 
         <p>
-
+            Interested in this data? Or the code that we used to visualize it and make this web-page? It's all on GitHub.
         </p>
 
     </div>

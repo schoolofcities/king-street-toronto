@@ -3,7 +3,7 @@
     import "../assets/global.css"
     import {scaleTime, scaleLinear, timeParse, group, sum, line} from "d3";
     import {regressionLoess} from "d3-regression";
-    import violations2019 from "../data/violations2019.json";
+    import violations2019 from "../assets/violations2019.json";
     import intersectionNames from "../assets/intersectionSummary.json";
 
     // get values to filter data

@@ -3,18 +3,34 @@
 	import data from "../assets/intersectionSummary.json";
 	import {scaleLinear} from "d3";
 
+	// get values to filter data
+	export let variable;
+
+	let labelName = "TRAFFIC VIOLATIONS";
+	let labelPeriod = "PER DAY "
+	let barColour = "#DC4633";
+	let domain = [0, 1250];
+	let yAxisLines = [1250, 1000, 750, 500, 250, 0];
+	if (variable === "totalTickets2019") {
+		labelPeriod = "";
+		labelName = "TRAFFIC TICKETS";
+		barColour = "#6FC7EA";
+		domain = [0, 6.1];
+		yAxisLines = [6, 5, 4, 3, 2, 1, 0]
+	};
+
 	let width;
-	const height = 325;
+	const height = 350;
 	const marginTop = 80;
     const marginRight = 45;
-    const marginBottom = 100;
+    const marginBottom = 80;
     const marginLeft = 45;
 
 	$: spacing = (width - marginRight - marginLeft) / data.length
 	$: console.log(spacing);
 
 	$: yScale = scaleLinear()
-        .domain([0, 1250])
+        .domain(domain)
         .range([height - marginBottom, marginTop]);
 
 </script>
@@ -45,7 +61,7 @@
 			stroke-width="2" 
 		/>
 
-		{#each [1250, 1000, 750, 500, 250, 0] as yMarker}
+		{#each yAxisLines as yMarker}
             <line 
                 class="gridLine" 
                 x1={marginLeft - 10} 
@@ -80,24 +96,53 @@
 				r="5"
 			/>
 
-			<line
-				class="bar" 
-				x1={marginLeft + spacing / 2 + index * spacing} 
-				y1={yScale(item.averageViolations2019)} 
-				x2={marginLeft + spacing / 2 + index * spacing} 
-				y2={height - marginBottom}
-				stroke-width="16" 
-			/>
+			{#if variable === "averageViolations2019"}
 
-			{#if item.averageViolations2019 > 0}
-				<text 
-					x={marginLeft + spacing / 2 + index * spacing} 
-					y={yScale(item.averageViolations2019) - 5}
-					text-anchor="middle"
-					class="label"
-					>
-					{item.averageViolations2019.toLocaleString()}
-				</text>
+				<line
+					class="bar" 
+					x1={marginLeft + spacing / 2 + index * spacing} 
+					y1={yScale(item[variable])} 
+					x2={marginLeft + spacing / 2 + index * spacing} 
+					y2={height - marginBottom}
+					stroke={barColour}
+					stroke-width="16" 
+				/>
+
+				{#if item[variable] > 0}
+					<text 
+						x={marginLeft + spacing / 2 + index * spacing} 
+						y={yScale(item[variable]) - 5}
+						text-anchor="middle"
+						class="label"
+						>
+						{item[variable].toLocaleString()}
+					</text>
+				{/if}
+
+			{:else}
+
+				<line
+					class="bar" 
+					x1={marginLeft + spacing / 2 + index * spacing} 
+					y1={yScale(item[variable] / 365)} 
+					x2={marginLeft + spacing / 2 + index * spacing} 
+					y2={height - marginBottom}
+					stroke={barColour}
+					stroke-width="16" 
+				/>
+
+				{#if item[variable] > 0}
+					<text 
+						x={marginLeft + spacing / 2 + index * spacing} 
+						y={yScale(item[variable] / 365) - 5}
+						text-anchor="middle"
+						class="label"
+						>
+						{(item[variable]  / 365).toFixed(2)}
+					</text>
+				{/if}
+
+
 			{/if}
 
 			<text 
@@ -148,10 +193,6 @@
         stroke-width: 1px;
         stroke: #eeeeee;
     }
-
-	.bar {
-		stroke: var(--brandRed);
-	}
 
 	.stationPoint {
 		fill: var(--brandDarkBlue);

@@ -8,10 +8,10 @@
     export let variable;
 
 	let labelName = "TICKETS";
-	let barColour = "#007FA3";
+	let barColour = "#6FC7EA";
 	if (variable === "Warnings") {
 		labelName = "WARNINGS";
-		barColour = "#6FC7EA";
+		barColour = "#F1C500";
 	};
 
 
