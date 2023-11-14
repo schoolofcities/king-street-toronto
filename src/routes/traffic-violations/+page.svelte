@@ -151,18 +151,18 @@
         <VerticalBarChart variable="averageViolations2019"/>
 
         <p>
-            In total, this amounts to <span class="bold">6,873 traffic violations per day</span> on average across the entire corridor in 2019. (Note that this is likely an underestimation due to not including the intersection at Simcoe and any violations that occur between 10pm and 5am).
+            In total, this amounts to 6,873 traffic violations per day on average across the entire corridor in 2019. (Note that this is likely an underestimation due to not including the intersection at Simcoe and any violations that occur between 10pm and 5am).
         </p>
 
         <p>
-            We can also similarly chart the number of tickets given at each intersection. For this, we are including all tickets given for <i>"Proceed Contrary to Sign at Intersection"</i> and <i>"Disobey Sign"</i> at intersections, and between the hours of 5pm and 10am to match with the violations data.
+            We similarly chart the number of tickets given at each intersection. For this, we are including all tickets given for <i>"Proceed Contrary to Sign at Intersection"</i> and <i>"Disobey Sign"</i> at intersections, and between the hours of 5pm and 10am to match with the violations data.
         </p>
 
 
         <VerticalBarChart variable="totalTickets2019"/>
 
         <p>
-            This amounts to <span class="bold">17.5 traffic tickets per day</span> on average, 6,387 in total for all 365 days in 2019. These numbers are drastically lower than all violations in the chart above, 0.255% of the overall total number of violations estimated from the City's traffic volume data.
+            This amounts to 17.5 traffic tickets per day on average, 6,387 in total for all 365 days in 2019. These numbers are drastically lower than all violations in the chart above, 0.255% of the overall total number of violations estimated from the City's traffic volume data.
         </p>
 
 
@@ -232,7 +232,7 @@
             We also chart how traffic enforcement has changed over time, both in terms of number of tickets and written warnings. At the onset of the pilot in November 2017, there was a large number of warnings, which soon subsided. It is not clear to us in the data we acquired about whether since then why someone violating traffic laws would get a warning instead of a ticket.
         </p>
         <p>
-            The number of tickets per month fluctuated around an average of 500 per month up until spring 2020 where it dropped, likely related to COVID-19. However, the number of tickets has not since increased to pre-COVID levels.
+            The number of tickets per month fluctuated around an average of 500 per month up until spring 2020 where it dropped, likely related to COVID-19. However, the number of tickets has not returned to pre-COVID levels, on average.
         </p>
         <p>
 
@@ -249,7 +249,7 @@
         <h3>Further Information</h3>
 
         <p>
-            Interested in this data? Or the code that we used to visualize it and make this web-page? It's all on GitHub.
+            Interested in this data? Or the code that we used to visualize it and make this web-page? It's all on <a href="https://github.com/schoolofcities/king-street-toronto">GitHub</a>.
         </p>
 
     </div>

@@ -39,9 +39,9 @@
 <div id="container" class="svg-container" bind:offsetWidth={width}>
 	<svg width={width} {height} class="svg-content">
 
-		<text x="2" y="30" class="label">AVERAGE NUMBER OF TRAFFIC VIOLATIONS PER DAY IN 2019</text>
+		<text x="2" y="30" class="label">AVERAGE NUMBER OF {labelName} PER DAY IN 2019</text>
 
-		<text x="2" y="50" class="label">For Illegal Left-Turn & Thru Movements on King St (Jarvis to Bathurst)</text>
+		<text x="2" y="50" class="label">For Illegal Left-Turn & Thru Movements on King St (Bathurst to Jarvis)</text>
 
 		<line 
 			class="axisLine" 
