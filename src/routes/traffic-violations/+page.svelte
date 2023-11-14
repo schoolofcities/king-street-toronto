@@ -66,8 +66,8 @@
             We requested data on intersection-level vehicle movement data from the City of Toronto as well as traffic tickets from Toronto Police from 2016 to mid-2023 to analyze how often drivers make illegal movements on King Street, and how often they were receiving traffic tickets.
         </p>
         <p>
-            From this data, we find there are approximately <span class="bold">6,800 illegal turns and thru movements at intersections per day on the King Street Transit Priority Corridor</span>, but <span class="yellow">less than 0.5% are being ticketed by Toronto Police</span>, on average. 
-            Thus <span class="red">more than 99.5% of drivers are not being fined for breaking the law</span> on the King Street Transit Priority Corridor. 
+            From this data, we find there are approximately <span class="bold">6,800 illegal turns and thru movements at intersections per day on the King Street Transit Priority Corridor</span>, but <span class="yellow">less than 0.3% are being ticketed by Toronto Police</span>, on average. 
+            Thus <span class="red">more than 99.7% of drivers are not being fined for breaking the law</span> on the King Street Transit Priority Corridor. 
         </p>
         <p>    
             At a range of $85 to $110 per ticket, this is a massive missed opportunity for revenue for the City that could be achieved with increased enforcement, particularly via automatic enforcement cameras. At the time of writing, Councillor Chris Moise had pushed forward an <a href="https://secure.toronto.ca/council/agenda-item.do?item=2023.MM12.1">item in council</a> for city staff to assess the feasibility of implementing automated traffic enforcement (to report back in the second quarter of 2024). Time will tell if this will be implemented in the (near) future.
