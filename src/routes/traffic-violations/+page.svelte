@@ -104,7 +104,7 @@
     <div class="text">
 
         <p>
-            The TTC added increased service to the 504 route as a response to the project's success (<a href="https://www.toronto.ca/legdocs/mmis/2019/cc/bgrd/backgroundfile-132032.pdf">City of Toronto</a>; <a href="https://www.thestar.com/news/gta/king-st-pilot-boosting-streetcar-ridership-ttc/article_8718cdce-0859-55e8-8397-af06878dbbde.html">The Star</a>). There was also increased cycling volumes and pedestrian volumes on King Street, as the street became safer due to there being fewer cars. Car volumes on King decreased, in some locations by more than 80%, and while there was some increase to traffic volume on nearby parallel streets, there was minimal impact to travel times on those streets (see <a href="https://www.toronto.ca/wp-content/uploads/2019/04/8fb5-TS_King-Street-Annual-Dashboard_Final.pdf">City of Toronto</a> report for details). Overall, the King Street Transit Priority Corridor was considered a success, and was used as a model for transit prioritization elsewhere (e.g. 14th Street in New York City).
+            The TTC added increased service to the 504 route as a response to the project's success (<a href="https://www.toronto.ca/legdocs/mmis/2019/cc/bgrd/backgroundfile-132032.pdf">City of Toronto</a>; <a href="https://www.thestar.com/news/gta/king-st-pilot-boosting-streetcar-ridership-ttc/article_8718cdce-0859-55e8-8397-af06878dbbde.html">The Star</a>). There was also increased cycling volumes and pedestrian volumes on King Street, as the street became safer due to there being fewer cars. Car volumes on King decreased in some locations by more than 80%, and while there was some increase to traffic volume on nearby parallel streets, there was minimal impact to travel times on those streets (see <a href="https://www.toronto.ca/wp-content/uploads/2019/04/8fb5-TS_King-Street-Annual-Dashboard_Final.pdf">City of Toronto</a> report for details). Overall, the King Street Transit Priority Corridor was considered a success, and was used as a model for transit prioritization elsewhere (e.g. 14th Street in New York City).
         </p>
 
     </div>
@@ -123,16 +123,17 @@
         </p>
 
         <p>
-            The City collects intersection-level traffic volume data via automatic cameras. They then use image recognition tools to tag any vehicle that travels through an intersection. Included in this is the direction and movement of each vehicle (e.g. travelling from east to west and turning south at the intersection, i.e. a left turn). This data was provided to us as counts for each direction and movement at each intersection, summed for each hour. We were then able to filter out movements that were illegal. The earliest data collection began in October 2017 at a few intersections before the start of the King Street Pilot, which was used by the city to establish baselines for their analyses. The most recent data that we use, available at only a few intersections, are as recent as May 2023. 
+            The City collects intersection-level traffic volume data on King Street via automatic cameras. They then use image recognition tools to tag and count vehicles that travel through an intersection. Included in this is the direction and movement of each vehicle (e.g. travelling from east to west and turning south at the intersection, i.e. a left turn). This data was provided to us as counts for each direction and movement at each intersection, aggregated by each hour. We were then able to filter out movements that were illegal. 
         </p>
-        <p>
-            The data provided are not complete throughout the time period of the King Street Pilot to today, as the data collection process changed in 2019 and some sensors were decomissioned in 2020. Before 2019, data collection was sporadic and conducted every couple of weeks and required human assistance. In 2019, edge processing units were installed and no longer relied on human assistance, and so data collection for most intersections became much more continuous.
+        <p> 
+            Data collection began in October 2017 at a few intersections before the start of the King Street Pilot, which was used by the city to establish baselines for their analyses. The most recent data that we use, available at only a few intersections, are as recent as May 2023. The data provided are not complete throughout the time period of the King Street Pilot to today, as the data collection process changed in early 2019 and some sensors were later decomissioned in 2020. 
+            <!-- Before 2019, data collection was sporadic and conducted every couple of weeks and required human assistance. In 2019, edge processing units were installed and no longer relied on human assistance, and so data collection for most intersections became much more continuous. -->
         </p>
         <p>
             A limitation of the data is that there is no differentiation in the type of private vehicles, particularly between taxis and regular cars. Taxi vehicles are permitted to make thru movements at intersections overnight, between 10pm and 5am. The data also do not distinguish between smaller authorized vehicles (e.g. police cars) from regular private vehicles. To fairly account for these limitations we restrict our analysis to the 5am to 10pm period, understanding that we are not counting any private vehicle violations overnight, while conversely, slightly over-estimating violations during the day due to authorized vehicles.
         </p>
         <p>
-            We also wanted to compare the number of traffic violations with the number of tickets handed out by Toronto Police (i.e. what % of illegal movements were actually being ticketed?). For data on traffic tickets, we underwent a freedom of information request with Toronto Police, asking for all tickets and warnings given out on the King Street corridor for traffic violations from 2016 to mid-2023. The freedom of information request cost $180 and took about 4 months.
+            We also wanted to compare the number of traffic violations with the number of tickets handed out by Toronto Police (i.e. what % of illegal movements were actually being ticketed?). For data on traffic tickets, we underwent a freedom of information request with Toronto Police, asking for data on all tickets and warnings given out on the King Street corridor for traffic violations from 2016 to mid-2023. The freedom of information request cost $180 and took about 4 months.
         </p>
 
     </div>
@@ -155,7 +156,7 @@
         </p>
 
         <p>
-            We similarly chart the number of tickets given at each intersection. For this, we are including all tickets given for <i>"Proceed Contrary to Sign at Intersection"</i> and <i>"Disobey Sign"</i> at intersections, and between the hours of 5pm and 10am to match with the violations data.
+            We similarly chart the number of tickets given at each intersection per day. For this, we are including all tickets given for <i>"Proceed Contrary to Sign at Intersection"</i> and <i>"Disobey Sign"</i> at intersections, and between the hours of 5pm and 10am to match with the violations data.
         </p>
 
 
@@ -229,18 +230,19 @@
         <h3>Changing Patterns in Enforcement?</h3>
 
         <p>
-            We also chart how traffic enforcement has changed over time, both in terms of number of tickets and written warnings. At the onset of the pilot in November 2017, there was a large number of warnings, which soon subsided. It is not clear to us in the data we acquired about whether since then why someone violating traffic laws would get a warning instead of a ticket.
-        </p>
-        <p>
-            The number of tickets per month fluctuated around an average of 500 per month up until spring 2020 where it dropped, likely related to COVID-19. However, the number of tickets has not returned to pre-COVID levels, on average.
-        </p>
-        <p>
-
+            We also chart how traffic enforcement has changed over time, both in terms of number of tickets and written warnings. At the onset of the pilot in November 2017, there was a large number of warnings, which soon subsided. Since then, it is not clear to us in the data why someone violating traffic laws would get a warning instead of a ticket.
         </p>
 
         <MonthlyTicketsBar variable="Tickets"/>
 
         <MonthlyTicketsBar variable="Warnings"/>
+
+        <p>
+            The number of tickets per month fluctuated around an average of about 500 per month up until spring 2020 where it dropped, likely related to COVID-19. However, the number of tickets has not returned to pre-COVID levels, on average. 
+        </p>    
+        <p> 
+            Installing automatic enforcement cameras would massively increase the capacity to ticket those who disobey traffic laws, and provide needed revenue for the City. At $85 to $110 per ticket, and 6,800 violations per day, that's around $650,000 of potential income per day. However, it's hard to say what the effect of travel behaviour would be if ticketing increased, as it would likely cause drivers to later avoid the route. So maybe this total would end up being a bit less. But less drivers on King Street would likely improve transit speed and reliability even more. Overall, automatic enforcement would certainly be beneficial for improving the quality and effectiveness of the King Street Transit Priority Corridor.
+        </p>
 
     </div>
 

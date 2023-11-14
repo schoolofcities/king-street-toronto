@@ -2,8 +2,6 @@
 
 Analysis and visualization of through-traffic violations and turning violations on the transit-priority section of King Street in Toronto.
 
-https://schoolofcities.github.io/king-street-toronto/traffic-violations/
-
 ### Data
 
 Intersection movement data were provided by the City of Toronto.
