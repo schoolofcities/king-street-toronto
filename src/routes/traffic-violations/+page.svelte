@@ -4,12 +4,12 @@
     import { onDestroy } from 'svelte';
 
     import kingSt2019 from "../../assets/king-st-2019.jpg";
+    import corridorDetailedMap from '../../assets/corridor-map-vectorized.svg';
     import kingBathurst from "../../assets/king-bathurst-112023.jpg";
     import kingSt2023ticket from "../../assets/king-st-ticket-052023.jpg";
 
     import TopOfSofC from "$lib/TopSofC.svelte";
     import SingleStackedBar from '$lib/SingleStackedBar.svelte';
-    import corridorDetailedMap from '../../assets/corridor_web.svg';
     import VerticalBarChart from '$lib/VerticalBarChart2019.svelte';
     import ViolationsChart2020s from "$lib/ViolationsChart2020s.svelte";
     import MonthlyTicketsBar from '$lib/MonthlyTicketsBar.svelte';
@@ -70,7 +70,7 @@
             Thus <span class="red">more than 99.7% of drivers are not being fined for breaking the law</span> on the King Street Transit Priority Corridor. 
         </p>
         <p>    
-            At a range of $85 to $110 per ticket, this is a massive missed opportunity for revenue for the City that could be achieved with increased enforcement, particularly via automatic enforcement cameras. At the time of writing, Councillor Chris Moise had pushed forward an <a href="https://secure.toronto.ca/council/agenda-item.do?item=2023.MM12.1">item in council</a> for city staff to assess the feasibility of implementing automated traffic enforcement (to report back in the second quarter of 2024). Time will tell if this will be implemented in the (near) future.
+            At a range of $85 to $110 per ticket, this is a missed opportunity for potential revenue for the City that could be achieved with increased enforcement, particularly via automatic enforcement cameras. At the time of writing, Councillor Chris Moise had pushed forward an <a href="https://secure.toronto.ca/council/agenda-item.do?item=2023.MM12.1">item in council</a> for city staff to assess the feasibility of implementing automated traffic enforcement (to report back in the second quarter of 2024). Time will tell if this will be implemented in the (near) future.
         </p>
         <p>
             Below we provide a brief background on the King Street Transit Priority Corridor, followed by our analysis and visualization of this data on traffic violations and traffic tickets.
@@ -123,11 +123,10 @@
         </p>
 
         <p>
-            The City collects intersection-level traffic volume data on King Street via automatic cameras. They then use image recognition tools to tag and count vehicles that travel through an intersection. Included in this is the direction and movement of each vehicle (e.g. travelling from east to west and turning south at the intersection, i.e. a left turn). This data was provided to us as counts for each direction and movement at each intersection, aggregated by each hour. We were then able to filter out movements that were illegal. 
+            The City collects intersection-level traffic volume data on King Street via automatic cameras and image recognition tools. Included in this is the direction and movement of each vehicle (e.g. travelling from east to west and turning south at the intersection, i.e. a left turn). This data was provided to us as counts for each direction and movement at each intersection, aggregated by each hour. We were then able to identify movements that were illegal. 
         </p>
         <p> 
             Data collection began in October 2017 at a few intersections before the start of the King Street Pilot, which was used by the city to establish baselines for their analyses. The most recent data that we use, available at only a few intersections, are as recent as May 2023. The data provided are not complete throughout the time period of the King Street Pilot to today, as the data collection process changed in early 2019 and some sensors were later decommissioned in 2020. 
-            <!-- Before 2019, data collection was sporadic and conducted every couple of weeks and required human assistance. In 2019, edge processing units were installed and no longer relied on human assistance, and so data collection for most intersections became much more continuous. -->
         </p>
         <p>
             A limitation of the data is that there is no differentiation in the type of private vehicles, particularly between taxis and regular cars. Taxi vehicles are permitted to make thru movements at intersections overnight (between 10pm and 5am). The data also do not distinguish between smaller authorized vehicles (e.g. police cars) and regular private vehicles. To fairly account for these limitations we restricted our analysis to the 5am to 10pm period, understanding that we were not counting any private vehicle violations overnight, while conversely, we were slightly over-estimating violations during the day due to authorized vehicles.
@@ -143,7 +142,7 @@
         <h3>Traffic violations in 2019</h3>
 
         <p>
-            The most complete data that we have across all intersections are from 2019. Other than the intersection of King and Simcoe streets, there is near-continuous data for all other 11 intersections during the year (the intersection at Simcoe Street allows thru movements, and although we do not have the data to show it, it likely has lower violations than other streets).
+            The most complete data that we have across all intersections are from 2019. Other than the intersection of King and Simcoe streets, there is near-continuous data for all other 11 intersections during the year (the intersection at Simcoe Street allows thru movements, and although we do not have the data to show it, it likely has similar violations to John or York streets which are on the low end).
         </p>
         <p>
            We first visualize the average number of violations (illegal thru + illegal turns) at each intersection along the Corridor per day.
@@ -156,27 +155,15 @@
         </p>
 
         <p>
-            We similarly chart the number of tickets given at each intersection per day. For this, we are including all tickets given for <i>"Proceed Contrary to Sign at Intersection"</i> and <i>"Disobey Sign"</i> at intersections, and between the hours of 5am and 10pm, in order to match with the violations data.
+            We similarly chart the average number of tickets issued at each intersection per day. For this, we are including all tickets given for the offences <i>"Proceed Contrary to Sign at Intersection"</i> and <i>"Disobey Sign"</i>, filtered to only include those that occur between the hours of 5am and 10pm, in order to match with the violations data.
         </p>
 
 
         <VerticalBarChart variable="totalTickets2019"/>
 
         <p>
-            This amounts to 17.5 traffic tickets per day on average, 6,387 in total for all 365 days in 2019. These numbers are drastically lower than all violations in the chart above; 0.255% of the overall total number of violations estimated from the City's traffic volume data.
+            This amounts to 17.5 traffic tickets per day on average, 6,387 in total for all 365 days in 2019. These numbers are a tiny fraction of all violations in the chart above; 0.255% of the overall total number of violations estimated from the City's traffic volume data.
         </p>
-
-
-
-        <!-- <p>
-            Let's take a look at how this varies over time during this period. Each red circle on this plot is the total number of traffic violations on each day, and the blue line is a rolling average (based on a <a href="https://en.wikipedia.org/wiki/Local_regression">LOESS regression</a> function).
-        </p> -->
-        
-        <!-- <TotalViolations2019Chart />
-
-        <p>
-            (Some text describing this plot above)
-        </p> -->
 
     </div>
 
@@ -189,11 +176,11 @@
         </p>
 
         <p>
-            While we don't have data at all intersections, we can still take a look at trends for each of the  intersections that do have data for from 2020 to 2023, and compare each to the average number of violations per day in 2019. 
+            While there is no longer data for all intersections, we can still take a look at trends for each of the  intersections that do have data for from 2020 to 2023, and compare them to the average number of violations per day in 2019. 
         </p>
 
         <p>
-            Each red circle on the plots below is the total number of traffic violations on each day at each intersection, and the yellow line is a rolling average (based on a <a href="https://en.wikipedia.org/wiki/Local_regression">LOESS regression</a> function). The gaps in the red bars are for days where there was no data available. The dark blue dashed line is the 2019 average.
+            Each red circle on the plots below is the total number of traffic violations on each day at each intersection, and the yellow line is a rolling average (based on a <a href="https://en.wikipedia.org/wiki/Local_regression">LOESS regression</a> function). The gaps between the red bars are for days where there was no data available. The dark blue dashed line is the intersection's 2019 average.
         </p>
 
         
@@ -212,10 +199,10 @@
     <div class="text">
 
         <p>
-            The number of violations per day from 2020 to 2023 fluctuate over time, and are often in relation to COVID-19 closures that reduced traffic overall in the city.
+            The number of violations per day from 2020 to 2023 fluctuate over time and are often in relation to COVID-19 lockdowns that reduced traffic overall in the city.
         </p>    
         <p>    
-            Overall though, the number of traffic violations in the latter half of 2022 and into 2023 are very close to 2019 averages. While we do not have complete data across all the intersections, based on the data that we do have, we can be pretty confident that the number of violations per day (excluding 10pm to 5am) has returned to the 2019 level of approximately 6,800 per day.
+            It is clear that the number of traffic violations in the latter half of 2022 and into 2023 are very close to 2019 averages. While we do not have complete data across all intersections, based on the data that we do have, we can be pretty confident that the number of violations per day (excluding 10pm to 5am) has returned to the 2019 level of approximately 6,800 per day.
         </p>
 
     </div>
@@ -241,7 +228,7 @@
             The number of tickets per month fluctuated around an average of about 500 per month up until spring 2020 when it dropped, likely related to COVID-19. However, the number of tickets has not returned to pre-COVID levels, on average. 
         </p>    
         <p> 
-            Installing automatic enforcement cameras would massively increase the capacity to ticket those who disobey traffic laws, providing needed revenue for the City. At $85 to $110 per ticket, and 6,800 violations per day, that's approximately $650,000 of potential income per day. It's hard to say what the effect on travel behaviour might be if ticketing increased, it may cause drivers to later avoid the route which may, in turn, lower the ticketing revenue estimates. That said, fewer drivers on King Street would likely improve transit speed and reliability even more, and automatic enforcement would certainly be beneficial for improving the quality and effectiveness of the King Street Transit Priority Corridor.
+            Installing automatic enforcement cameras would massively increase the capacity to ticket those who violate the traffic restrictions of the King Street Transit Priority Corridor and provide needed revenue for the City. At $85 to $110 in fines per ticket and 6,800 violations per day, that's approximately $650,000 of potential income per day. It's hard to say what the effect on travel behaviour might be if enforcement increased, it may cause drivers to later avoid the route which may, in turn, lower ticketing revenue estimates. That said, fewer drivers on King Street would likely improve transit speed and reliability even more, and automatic enforcement would certainly be beneficial for improving the quality and effectiveness of the King Street Transit Priority Corridor.
         </p>
 
     </div>
