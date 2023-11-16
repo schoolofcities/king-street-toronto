@@ -130,7 +130,7 @@
 
 		<text x="2" y="30" class="label">TRAFFIC {labelName} PER MONTH</text>
 
-		<text x="2" y="50" class="label">For Illegal Left-Turn & Thru Movements on King St (Jarvis to Bathurst)</text>
+		<text x="2" y="50" class="label">For Intersection Violations on King Street (Bathurst to Jarvis)</text>
 
 	</svg>
 </div>

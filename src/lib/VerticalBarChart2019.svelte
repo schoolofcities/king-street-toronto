@@ -41,7 +41,7 @@
 
 		<text x="2" y="30" class="label">AVERAGE NUMBER OF {labelName} PER DAY IN 2019</text>
 
-		<text x="2" y="50" class="label">For Illegal Left-Turn & Thru Movements on King St (Bathurst to Jarvis)</text>
+		<text x="2" y="50" class="label">For Illegal Lefts and Thru Movements on King (Bathurst to Jarvis)</text>
 
 		<line 
 			class="axisLine" 
@@ -113,7 +113,7 @@
 						x={marginLeft + spacing / 2 + index * spacing} 
 						y={yScale(item[variable]) - 5}
 						text-anchor="middle"
-						class="label"
+						class="labelbar"
 						>
 						{item[variable].toLocaleString()}
 					</text>
@@ -136,7 +136,7 @@
 						x={marginLeft + spacing / 2 + index * spacing} 
 						y={yScale(item[variable] / 365) - 5}
 						text-anchor="middle"
-						class="label"
+						class="labelbar"
 						>
 						{(item[variable]  / 365).toFixed(2)}
 					</text>
@@ -206,6 +206,12 @@
     .label {
         font-family: RobotoRegular, sans-serif;
         font-size: 13.5px;
+        fill: var(--brandGray80)
+    }
+
+	.labelbar {
+        font-family: RobotoRegular, sans-serif;
+        font-size: 12px;
         fill: var(--brandGray80)
     }
 
