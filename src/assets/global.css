@@ -103,13 +103,13 @@ h2 {
 h3 {
     font-family: TradeGothicBold;
     color: var(--brandBlack);
-    font-size: 21px;
+    font-size: 23px;
 }
 
 p {
     font-family: NotoSerifOldUyghur;
     font-size: 17px;
-    line-height: 27px;
+    line-height: 29px;
 }
 
 

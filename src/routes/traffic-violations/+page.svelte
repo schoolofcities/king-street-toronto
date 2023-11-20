@@ -27,6 +27,7 @@
 </script>
 
 
+<TopOfSofC/>
 
 <main>
 
@@ -37,8 +38,7 @@
         <h1>{count}</h1>
     </div>
 
-    <TopOfSofC/>
-
+    
     <div class="wideImage">
         <img width=100% height=100% src={kingSt2019} style="border-bottom: 2px solid #DC4633; border-top: 1px solid #1E3765; margin-top: 100px" alt="King Street Toronto">
     </div>
